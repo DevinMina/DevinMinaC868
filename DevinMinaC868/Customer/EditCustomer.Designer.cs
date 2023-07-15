@@ -60,6 +60,7 @@ namespace DevinMinaC868
             this.cancelButton.TabIndex = 39;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = false;
+            this.cancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 
             // updateButton
             // 
@@ -71,6 +72,7 @@ namespace DevinMinaC868
             this.updateButton.TabIndex = 38;
             this.updateButton.Text = "Update";
             this.updateButton.UseVisualStyleBackColor = false;
+            this.updateButton.Click += new System.EventHandler(this.UpdateButton_Click);
             // 
             // label9
             // 
@@ -175,6 +177,7 @@ namespace DevinMinaC868
             this.countryText.Name = "countryText";
             this.countryText.Size = new System.Drawing.Size(100, 20);
             this.countryText.TabIndex = 27;
+            this.countryText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CountryText_KeyPress);
             // 
             // zipText
             // 
@@ -183,6 +186,7 @@ namespace DevinMinaC868
             this.zipText.Name = "zipText";
             this.zipText.Size = new System.Drawing.Size(100, 20);
             this.zipText.TabIndex = 26;
+            this.zipText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ZipText_KeyPress);
             // 
             // cityText
             // 
@@ -191,6 +195,7 @@ namespace DevinMinaC868
             this.cityText.Name = "cityText";
             this.cityText.Size = new System.Drawing.Size(100, 20);
             this.cityText.TabIndex = 25;
+            this.cityText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CityText_KeyPress);
             // 
             // addressText
             // 
@@ -199,6 +204,7 @@ namespace DevinMinaC868
             this.addressText.Name = "addressText";
             this.addressText.Size = new System.Drawing.Size(100, 20);
             this.addressText.TabIndex = 24;
+            this.addressText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.AddressText_KeyPress);
             // 
             // phoneText
             // 
@@ -207,6 +213,7 @@ namespace DevinMinaC868
             this.phoneText.Name = "phoneText";
             this.phoneText.Size = new System.Drawing.Size(100, 20);
             this.phoneText.TabIndex = 23;
+            this.phoneText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PhoneText_KeyPress);
             // 
             // nameText
             // 
@@ -215,6 +222,7 @@ namespace DevinMinaC868
             this.nameText.Name = "nameText";
             this.nameText.Size = new System.Drawing.Size(100, 20);
             this.nameText.TabIndex = 22;
+            this.nameText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NameText_KeyPress);
             // 
             // label1
             // 
@@ -233,6 +241,7 @@ namespace DevinMinaC868
             this.modifyComboBox.Size = new System.Drawing.Size(121, 21);
             this.modifyComboBox.TabIndex = 20;
             this.modifyComboBox.Text = "--Select--";
+            this.modifyComboBox.SelectedValueChanged += new System.EventHandler(this.EditComboBox_SelectedValueChanged);
             // 
             // EditCustomer
             // 

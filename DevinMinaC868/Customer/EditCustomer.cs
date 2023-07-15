@@ -93,7 +93,7 @@ namespace DevinMinaC868
             }
         }
         //populates currently selected customer information into text boxes
-        private void ModifyComboBox_SelectedValueChanged(object sender, EventArgs e)
+        private void EditComboBox_SelectedValueChanged(object sender, EventArgs e)
         {
             DataRowView dataRowView = modifyComboBox.SelectedItem as DataRowView;
             int id = Convert.ToInt32(modifyComboBox.SelectedValue);
