@@ -61,6 +61,7 @@ namespace DevinMinaC868.User
             this.cancelButton.TabIndex = 46;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = false;
+            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
             // button1
             // 
@@ -71,6 +72,7 @@ namespace DevinMinaC868.User
             this.button1.TabIndex = 45;
             this.button1.Text = "Create";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.addUser_Click);
             // 
             // noRadio
             // 
@@ -116,6 +118,7 @@ namespace DevinMinaC868.User
             this.userNameText.Name = "userNameText";
             this.userNameText.Size = new System.Drawing.Size(100, 20);
             this.userNameText.TabIndex = 40;
+            this.userNameText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.userNameText_KeyPress);
             // 
             // label4
             // 
