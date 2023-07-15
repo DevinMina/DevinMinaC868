@@ -33,11 +33,11 @@ namespace DevinMinaC868
 
         }
 
-        private void ModifyCustomerButton_Click(object sender, EventArgs e)
+        private void EditCustomerButton_Click(object sender, EventArgs e)
         {
-            Form modifyCustomer = new EditCustomer();
-            modifyCustomer.Owner = this;
-            modifyCustomer.Show();
+            Form editCustomer = new EditCustomer();
+            editCustomer.Owner = this;
+            editCustomer.Show();
             this.Hide();
         }
 
@@ -57,7 +57,7 @@ namespace DevinMinaC868
             this.Hide();
         }
 
-        private void ModifyAppointmentButton_Click(object sender, EventArgs e)
+        private void EditAppointmentButton_Click(object sender, EventArgs e)
         {
             Form editAppt = new EditAppt();
             editAppt.Owner = this;
@@ -200,7 +200,7 @@ namespace DevinMinaC868
             this.Hide();
         }
 
-        private void Portal_FormClosing(object sender, FormClosingEventArgs e)
+        private void Menu_FormClosing(object sender, FormClosingEventArgs e)
         {
             Record.logOut(dbHelp.getUserName());
         }
@@ -213,7 +213,7 @@ namespace DevinMinaC868
             this.Hide();
         }
 
-        private void modifyUser_Click(object sender, EventArgs e)
+        private void editUser_Click(object sender, EventArgs e)
         {
             Form editUser = new EditUser();
             editUser.Owner = this;
@@ -229,7 +229,7 @@ namespace DevinMinaC868
             this.Hide();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void AppointmentCountByType_Click(object sender, EventArgs e)
         {
             Form apptCountByType = new ApptCountByType();
             apptCountByType.Owner = this;

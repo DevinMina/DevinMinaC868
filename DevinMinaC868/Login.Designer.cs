@@ -46,6 +46,7 @@ namespace DevinMinaC868
             this.exitButton.TabIndex = 11;
             this.exitButton.Text = "Exit";
             this.exitButton.UseVisualStyleBackColor = false;
+            this.exitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // loginButton
             // 

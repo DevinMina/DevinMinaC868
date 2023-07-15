@@ -14,7 +14,7 @@ namespace DevinMinaC868
     public partial class Login : Form
     {
         public string error = "The username or password entered does not exist or is incorrect. Please try again.";
-        public string exit = "Are you sure you wish to exit the application?";
+        public string exit = "Are you sure you want to exit the application?";
         public Login()
         {
             InitializeComponent();

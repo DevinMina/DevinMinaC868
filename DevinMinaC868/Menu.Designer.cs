@@ -63,52 +63,57 @@ namespace DevinMinaC868
             // appointmentsByConsultant
             // 
             this.appointmentsByConsultant.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.appointmentsByConsultant.Location = new System.Drawing.Point(429, 29);
+            this.appointmentsByConsultant.Location = new System.Drawing.Point(543, 84);
             this.appointmentsByConsultant.Name = "appointmentsByConsultant";
             this.appointmentsByConsultant.Size = new System.Drawing.Size(255, 42);
             this.appointmentsByConsultant.TabIndex = 17;
             this.appointmentsByConsultant.Text = "Search Appointments by Consultant";
             this.appointmentsByConsultant.UseVisualStyleBackColor = false;
+            this.appointmentsByConsultant.Click += new System.EventHandler(this.AppointmentsByConsultant_Click);
             // 
             // appointmentsByCustomer
             // 
             this.appointmentsByCustomer.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.appointmentsByCustomer.Location = new System.Drawing.Point(156, 29);
+            this.appointmentsByCustomer.Location = new System.Drawing.Point(270, 84);
             this.appointmentsByCustomer.Name = "appointmentsByCustomer";
             this.appointmentsByCustomer.Size = new System.Drawing.Size(267, 42);
             this.appointmentsByCustomer.TabIndex = 19;
             this.appointmentsByCustomer.Text = "Search Appointments By Customer";
             this.appointmentsByCustomer.UseVisualStyleBackColor = false;
+            this.appointmentsByCustomer.Click += new System.EventHandler(this.AppointmentsByCustomer_Click);
             // 
             // deleteUser
             // 
             this.deleteUser.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.deleteUser.Location = new System.Drawing.Point(732, 343);
+            this.deleteUser.Location = new System.Drawing.Point(846, 398);
             this.deleteUser.Name = "deleteUser";
             this.deleteUser.Size = new System.Drawing.Size(84, 23);
             this.deleteUser.TabIndex = 24;
             this.deleteUser.Text = "Delete User";
             this.deleteUser.UseVisualStyleBackColor = false;
+            this.deleteUser.Click += new System.EventHandler(this.deleteUser_Click);
             // 
             // modifyUser
             // 
             this.modifyUser.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.modifyUser.Location = new System.Drawing.Point(772, 314);
+            this.modifyUser.Location = new System.Drawing.Point(886, 369);
             this.modifyUser.Name = "modifyUser";
             this.modifyUser.Size = new System.Drawing.Size(94, 23);
             this.modifyUser.TabIndex = 23;
-            this.modifyUser.Text = "Modify User";
+            this.modifyUser.Text = "Edit User";
             this.modifyUser.UseVisualStyleBackColor = false;
+            this.modifyUser.Click += new System.EventHandler(this.editUser_Click);
             // 
             // addUser
             // 
             this.addUser.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.addUser.Location = new System.Drawing.Point(691, 314);
+            this.addUser.Location = new System.Drawing.Point(805, 369);
             this.addUser.Name = "addUser";
             this.addUser.Size = new System.Drawing.Size(75, 23);
             this.addUser.TabIndex = 22;
             this.addUser.Text = "Add User";
             this.addUser.UseVisualStyleBackColor = false;
+            this.addUser.Click += new System.EventHandler(this.addUser_Click);
             // 
             // panel3
             // 
@@ -116,7 +121,7 @@ namespace DevinMinaC868
             this.panel3.Controls.Add(this.apptByMonthButton);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.button1);
-            this.panel3.Location = new System.Drawing.Point(702, 77);
+            this.panel3.Location = new System.Drawing.Point(816, 132);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(161, 226);
             this.panel3.TabIndex = 21;
@@ -130,6 +135,7 @@ namespace DevinMinaC868
             this.apptByMonthButton.TabIndex = 6;
             this.apptByMonthButton.Text = "Appointments by Month";
             this.apptByMonthButton.UseVisualStyleBackColor = false;
+            this.apptByMonthButton.Click += new System.EventHandler(this.ApptByMonthButton_Click);
             // 
             // label5
             // 
@@ -148,23 +154,25 @@ namespace DevinMinaC868
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(97, 72);
             this.button1.TabIndex = 13;
-            this.button1.Text = "Appointment Counts by Type";
+            this.button1.Text = "Appointment Count by Type";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.AppointmentCountByType_Click);
             // 
             // refreshButton
             // 
             this.refreshButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.refreshButton.Location = new System.Drawing.Point(498, 398);
+            this.refreshButton.Location = new System.Drawing.Point(612, 453);
             this.refreshButton.Name = "refreshButton";
             this.refreshButton.Size = new System.Drawing.Size(75, 23);
             this.refreshButton.TabIndex = 20;
             this.refreshButton.Text = "Refresh";
             this.refreshButton.UseVisualStyleBackColor = false;
+            this.refreshButton.Click += new System.EventHandler(this.RefreshButton_Click);
             // 
             // monthRadio
             // 
             this.monthRadio.AutoSize = true;
-            this.monthRadio.Location = new System.Drawing.Point(386, 401);
+            this.monthRadio.Location = new System.Drawing.Point(500, 456);
             this.monthRadio.Name = "monthRadio";
             this.monthRadio.Size = new System.Drawing.Size(81, 17);
             this.monthRadio.TabIndex = 18;
@@ -176,13 +184,14 @@ namespace DevinMinaC868
             // 
             this.weekRadio.AutoSize = true;
             this.weekRadio.Checked = true;
-            this.weekRadio.Location = new System.Drawing.Point(270, 401);
+            this.weekRadio.Location = new System.Drawing.Point(384, 456);
             this.weekRadio.Name = "weekRadio";
             this.weekRadio.Size = new System.Drawing.Size(80, 17);
             this.weekRadio.TabIndex = 16;
             this.weekRadio.TabStop = true;
             this.weekRadio.Text = "Week View";
             this.weekRadio.UseVisualStyleBackColor = true;
+            this.weekRadio.CheckedChanged += new System.EventHandler(this.WeekRadio_CheckedChanged);
             // 
             // appointmentCalendar
             // 
@@ -190,7 +199,7 @@ namespace DevinMinaC868
             this.appointmentCalendar.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.appointmentCalendar.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.appointmentCalendar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.appointmentCalendar.Location = new System.Drawing.Point(156, 77);
+            this.appointmentCalendar.Location = new System.Drawing.Point(270, 132);
             this.appointmentCalendar.Name = "appointmentCalendar";
             this.appointmentCalendar.ReadOnly = true;
             this.appointmentCalendar.RowHeadersWidth = 45;
@@ -207,7 +216,7 @@ namespace DevinMinaC868
             this.panel2.Controls.Add(this.deleteAppointmentButton);
             this.panel2.Controls.Add(this.modifyAppointmentButton);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(-66, 242);
+            this.panel2.Location = new System.Drawing.Point(48, 297);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(216, 153);
             this.panel2.TabIndex = 14;
@@ -231,6 +240,7 @@ namespace DevinMinaC868
             this.addAppointmentButton.TabIndex = 4;
             this.addAppointmentButton.Text = "Add Appointment";
             this.addAppointmentButton.UseVisualStyleBackColor = false;
+            this.addAppointmentButton.Click += new System.EventHandler(this.AddAppointmentButton_Click);
             // 
             // deleteAppointmentButton
             // 
@@ -241,6 +251,7 @@ namespace DevinMinaC868
             this.deleteAppointmentButton.TabIndex = 6;
             this.deleteAppointmentButton.Text = "Delete Appointment";
             this.deleteAppointmentButton.UseVisualStyleBackColor = false;
+            this.deleteAppointmentButton.Click += new System.EventHandler(this.DeleteAppointmentButton_Click);
             // 
             // modifyAppointmentButton
             // 
@@ -249,8 +260,9 @@ namespace DevinMinaC868
             this.modifyAppointmentButton.Name = "modifyAppointmentButton";
             this.modifyAppointmentButton.Size = new System.Drawing.Size(137, 23);
             this.modifyAppointmentButton.TabIndex = 5;
-            this.modifyAppointmentButton.Text = "Modify Appointment";
+            this.modifyAppointmentButton.Text = "Edit Appointment";
             this.modifyAppointmentButton.UseVisualStyleBackColor = false;
+            this.modifyAppointmentButton.Click += new System.EventHandler(this.EditAppointmentButton_Click);
             // 
             // label2
             // 
@@ -271,7 +283,7 @@ namespace DevinMinaC868
             this.panel1.Controls.Add(this.addCustomerButton);
             this.panel1.Controls.Add(this.deleteCustomerButton);
             this.panel1.Controls.Add(this.modifyCustomerButton);
-            this.panel1.Location = new System.Drawing.Point(-66, 77);
+            this.panel1.Location = new System.Drawing.Point(48, 132);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(216, 153);
             this.panel1.TabIndex = 13;
@@ -305,6 +317,7 @@ namespace DevinMinaC868
             this.addCustomerButton.TabIndex = 0;
             this.addCustomerButton.Text = "Add Customer";
             this.addCustomerButton.UseVisualStyleBackColor = false;
+            this.addCustomerButton.Click += new System.EventHandler(this.AddCustomerButton_Click);
             // 
             // deleteCustomerButton
             // 
@@ -315,6 +328,7 @@ namespace DevinMinaC868
             this.deleteCustomerButton.TabIndex = 2;
             this.deleteCustomerButton.Text = "Delete Customer";
             this.deleteCustomerButton.UseVisualStyleBackColor = false;
+            this.deleteCustomerButton.Click += new System.EventHandler(this.DeleteCustomerButton_Click);
             // 
             // modifyCustomerButton
             // 
@@ -323,14 +337,15 @@ namespace DevinMinaC868
             this.modifyCustomerButton.Name = "modifyCustomerButton";
             this.modifyCustomerButton.Size = new System.Drawing.Size(137, 23);
             this.modifyCustomerButton.TabIndex = 1;
-            this.modifyCustomerButton.Text = "Modify Customer";
+            this.modifyCustomerButton.Text = "Edit Customer";
             this.modifyCustomerButton.UseVisualStyleBackColor = false;
+            this.modifyCustomerButton.Click += new System.EventHandler(this.EditCustomerButton_Click);
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(910, 504);
+            this.ClientSize = new System.Drawing.Size(1061, 679);
             this.Controls.Add(this.appointmentsByConsultant);
             this.Controls.Add(this.appointmentsByCustomer);
             this.Controls.Add(this.deleteUser);
@@ -345,6 +360,7 @@ namespace DevinMinaC868
             this.Controls.Add(this.panel1);
             this.Name = "Menu";
             this.Text = "Menu";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Menu_FormClosing);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.appointmentCalendar)).EndInit();
