@@ -54,6 +54,7 @@ namespace DevinMinaC868
             this.addCustomerButton = new System.Windows.Forms.Button();
             this.deleteCustomerButton = new System.Windows.Forms.Button();
             this.modifyCustomerButton = new System.Windows.Forms.Button();
+            this.searchBox = new System.Windows.Forms.TextBox();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.appointmentCalendar)).BeginInit();
             this.panel2.SuspendLayout();
@@ -63,7 +64,7 @@ namespace DevinMinaC868
             // appointmentsByConsultant
             // 
             this.appointmentsByConsultant.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.appointmentsByConsultant.Location = new System.Drawing.Point(543, 84);
+            this.appointmentsByConsultant.Location = new System.Drawing.Point(543, 40);
             this.appointmentsByConsultant.Name = "appointmentsByConsultant";
             this.appointmentsByConsultant.Size = new System.Drawing.Size(255, 42);
             this.appointmentsByConsultant.TabIndex = 17;
@@ -74,7 +75,7 @@ namespace DevinMinaC868
             // appointmentsByCustomer
             // 
             this.appointmentsByCustomer.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.appointmentsByCustomer.Location = new System.Drawing.Point(270, 84);
+            this.appointmentsByCustomer.Location = new System.Drawing.Point(270, 40);
             this.appointmentsByCustomer.Name = "appointmentsByCustomer";
             this.appointmentsByCustomer.Size = new System.Drawing.Size(267, 42);
             this.appointmentsByCustomer.TabIndex = 19;
@@ -341,11 +342,21 @@ namespace DevinMinaC868
             this.modifyCustomerButton.UseVisualStyleBackColor = false;
             this.modifyCustomerButton.Click += new System.EventHandler(this.EditCustomerButton_Click);
             // 
+            // searchBox
+            // 
+            this.searchBox.Location = new System.Drawing.Point(270, 106);
+            this.searchBox.Name = "searchBox";
+            this.searchBox.Size = new System.Drawing.Size(177, 20);
+            this.searchBox.TabIndex = 25;
+            this.searchBox.Text = "Search Box";
+            this.searchBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1061, 679);
+            this.Controls.Add(this.searchBox);
             this.Controls.Add(this.appointmentsByConsultant);
             this.Controls.Add(this.appointmentsByCustomer);
             this.Controls.Add(this.deleteUser);
@@ -400,5 +411,6 @@ namespace DevinMinaC868
         private System.Windows.Forms.Button addCustomerButton;
         private System.Windows.Forms.Button deleteCustomerButton;
         private System.Windows.Forms.Button modifyCustomerButton;
+        private System.Windows.Forms.TextBox searchBox;
     }
 }

@@ -16,7 +16,7 @@ namespace DevinMinaC868
         {
             InitializeComponent();
             appointmentCalendar.DataSource = displayCalendar(weekRadio.Checked);
-            // displayReminder(appointmentCalendar);
+            //displayReminder(appointmentCalendar);
         }
 
         public void updateCalendar()
@@ -235,6 +235,11 @@ namespace DevinMinaC868
             apptCountByType.Owner = this;
             apptCountByType.Show();
             this.Hide();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
