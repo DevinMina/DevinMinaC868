@@ -46,13 +46,13 @@ namespace DevinMinaC868.Appt
 
         public void populateCustomerList()
         {
-            MySqlConnection connection = new MySqlConnection(dbHelp.getConnectionString());
+            MySqlConnection conn = new MySqlConnection(dbHelp.getConnectionString());
 
             try
             {
                 string query = "SELECT customerId, concat(customerName, ' --ID: ', customerId) as Display FROM customer;";
-                MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter(query, connection);
-                connection.Open();
+                MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter(query, conn);
+                conn.Open();
                 DataSet dataSet = new DataSet();
                 mySqlDataAdapter.Fill(dataSet, "Cust");
                 customerComboBox.DisplayMember = "Display";
@@ -66,14 +66,14 @@ namespace DevinMinaC868.Appt
         }
         public void populateAppointmentList()
         {
-            MySqlConnection connection = new MySqlConnection(dbHelp.getConnectionString());
+            MySqlConnection conn = new MySqlConnection(dbHelp.getConnectionString());
             string utcOffset = (TimeZoneInfo.Local.GetUtcOffset(DateTime.UtcNow).ToString().Substring(0, 6));
             try
             {
                 string query = $"SELECT a" +
                     $"ppointmentId, concat(type, ' --Time: ', DATE_FORMAT(CONVERT_TZ(start, '+00:00', '{utcOffset}'), '%M %D %Y %r')) as Display FROM appointment WHERE customerId = '{customerComboBox.SelectedValue}';";
-                MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter(query, connection);
-                connection.Open();
+                MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter(query, conn);
+                conn.Open();
                 DataSet dataSet = new DataSet();
                 mySqlDataAdapter.Fill(dataSet, "Appoint");
                 appointmentComboBox.DisplayMember = "Display";
@@ -121,13 +121,13 @@ namespace DevinMinaC868.Appt
         {
             DataRowView dataRowView = appointmentComboBox.SelectedItem as DataRowView;
             int id = Convert.ToInt32(appointmentComboBox.SelectedValue);
-            var appointmentList = dbHelp.getAppointmentList(id);
-            setAppointList(appointmentList);
+            var apptList = dbHelp.getAppointmentList(id);
+            setAppointList(apptList);
 
             if (appointmentComboBox.SelectedIndex != -1)
             {
                 deleteButton.Enabled = true;
-                populateFields(appointmentList);
+                populateFields(apptList);
             }
         }
 
@@ -139,8 +139,8 @@ namespace DevinMinaC868.Appt
 
         private void DeleteButton_Click(object sender, EventArgs e)
         {
-            DialogResult confirmation = MessageBox.Show("Would you like to delete this appointment? This cannot be undone.", "", MessageBoxButtons.YesNo);
-            if (confirmation == DialogResult.Yes)
+            DialogResult confirm = MessageBox.Show("Would you like to delete this appointment? This cannot be undone.", "", MessageBoxButtons.YesNo);
+            if (confirm == DialogResult.Yes)
             {
                 try
                 {

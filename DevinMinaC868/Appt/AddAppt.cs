@@ -66,10 +66,10 @@ namespace DevinMinaC868
 
             DateTime systStart = start.ToLocalTime();
             DateTime systEnd = end.ToLocalTime();
-            DateTime businessStart = DateTime.Today.AddHours(8);
-            DateTime businessEnd = DateTime.Today.AddHours(17);
+            DateTime dayStart = DateTime.Today.AddHours(8);
+            DateTime dayEnd = DateTime.Today.AddHours(17);
 
-            if (systStart.TimeOfDay < businessStart.TimeOfDay || systEnd.TimeOfDay > businessEnd.TimeOfDay)
+            if (systStart.TimeOfDay < dayStart.TimeOfDay || systEnd.TimeOfDay > dayEnd.TimeOfDay)
             {
                 return 1;
             }
