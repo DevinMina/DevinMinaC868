@@ -36,13 +36,13 @@ namespace DevinMinaC868
 
         public void popCustomerList()
         {
-            MySqlConnection connection = new MySqlConnection(dbHelp.getConnectionString());
+            MySqlConnection conn = new MySqlConnection(dbHelp.getConnectionString());
 
             try
             {
                 string query = "SELECT customerId, concat(customerName, ' --ID: ', customerId) as Display FROM customer;";
-                MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter(query, connection);
-                connection.Open();
+                MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter(query, conn);
+                conn.Open();
                 DataSet dataSet = new DataSet();
                 mySqlDataAdapter.Fill(dataSet, "Cust");
                 addApptComboBox.DisplayMember = "Display";
@@ -56,15 +56,20 @@ namespace DevinMinaC868
             }
         }
 
+
+        //-------------------------------------------------------------START DEBUG(VAR)
+
+
+
         public int appointmentAllowed(DateTime start, DateTime end)
         {
 
-            DateTime systemStart = start.ToLocalTime();
-            DateTime systemEnd = end.ToLocalTime();
+            DateTime systStart = start.ToLocalTime();
+            DateTime systEnd = end.ToLocalTime();
             DateTime businessStart = DateTime.Today.AddHours(8);
             DateTime businessEnd = DateTime.Today.AddHours(17);
 
-            if (systemStart.TimeOfDay < businessStart.TimeOfDay || systemEnd.TimeOfDay > businessEnd.TimeOfDay)
+            if (systStart.TimeOfDay < businessStart.TimeOfDay || systEnd.TimeOfDay > businessEnd.TimeOfDay)
             {
                 return 1;
             }
@@ -72,11 +77,11 @@ namespace DevinMinaC868
             {
                 return 2;
             }
-            if (systemStart.TimeOfDay > systemEnd.TimeOfDay)
+            if (systStart.TimeOfDay > systEnd.TimeOfDay)
             {
                 return 3;
             }
-            if (systemStart.Date != systemEnd.Date)
+            if (systStart.Date != systEnd.Date)
             {
                 return 4;
             }
