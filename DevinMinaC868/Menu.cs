@@ -96,55 +96,55 @@ namespace DevinMinaC868
 
         public static Array displayCalendar(bool week)
         {
-            MySqlConnection connection = new MySqlConnection(dbHelp.connectionString);
-            connection.Open();
+            MySqlConnection conn = new MySqlConnection(dbHelp.connectionString);
+            conn.Open();
             var query =
                 $"SELECT customerId, type, start, end, appointmentId, userId FROM appointment WHERE userId = '{dbHelp.getUserID()}'";
-            MySqlCommand command = new MySqlCommand(query, connection);
-            MySqlDataReader reader = command.ExecuteReader();
+            MySqlCommand cmd = new MySqlCommand(query, conn);
+            MySqlDataReader reader = cmd.ExecuteReader();
             Dictionary<int, Hashtable> appointments = new Dictionary<int, Hashtable>();
 
             //create dictionary of appointments
             while (reader.Read())
             {
-                Hashtable appointment = new Hashtable();
-                appointment.Add("customerId", reader[0]);
-                appointment.Add("type", reader[1]);
-                appointment.Add("start", reader[2]);
-                appointment.Add("end", reader[3]);
-                appointment.Add("userId", reader[5]);
-                appointments.Add(Convert.ToInt32(reader[4]), appointment);
+                Hashtable appt = new Hashtable();
+                appt.Add("customerId", reader[0]);
+                appt.Add("type", reader[1]);
+                appt.Add("start", reader[2]);
+                appt.Add("end", reader[3]);
+                appt.Add("userId", reader[5]);
+                appointments.Add(Convert.ToInt32(reader[4]), appt);
             }
 
             reader.Close();
 
             //assigns username to appointment dictionary
-            foreach (var appointment in appointments.Values)
+            foreach (var appt in appointments.Values)
             {
-                query = $"SELECT userName FROM user WHERE userId = '{appointment["userId"]}'";
-                command = new MySqlCommand(query, connection);
-                reader = command.ExecuteReader();
+                query = $"SELECT userName FROM user WHERE userId = '{appt["userId"]}'";
+                cmd = new MySqlCommand(query, conn);
+                reader = cmd.ExecuteReader();
                 reader.Read();
-                appointment.Add("userName", reader[0]);
+                appt.Add("userName", reader[0]);
                 reader.Close();
             }
 
             //assigns customerName to appointment dictionary
-            foreach (var appointment in appointments.Values)
+            foreach (var appt in appointments.Values)
             {
-                query = $"SELECT customerName FROM customer WHERE customerId = '{appointment["customerId"]}'";
-                command = new MySqlCommand(query, connection);
-                reader = command.ExecuteReader();
+                query = $"SELECT customerName FROM customer WHERE customerId = '{appt["customerId"]}'";
+                cmd = new MySqlCommand(query, conn);
+                reader = cmd.ExecuteReader();
                 reader.Read();
-                appointment.Add("customerName", reader[0]);
+                appt.Add("customerName", reader[0]);
                 reader.Close();
             }
 
-            Dictionary<int, Hashtable> parsedAppointments = new Dictionary<int, Hashtable>();
-            foreach (var appointment in appointments)
+            Dictionary<int, Hashtable> parsedAppts = new Dictionary<int, Hashtable>();
+            foreach (var appt in appointments)
             {
-                DateTime start = DateTime.Parse(appointment.Value["start"].ToString());
-                DateTime end = DateTime.Parse(appointment.Value["end"].ToString());
+                DateTime start = DateTime.Parse(appt.Value["start"].ToString());
+                DateTime end = DateTime.Parse(appt.Value["end"].ToString());
                 DateTime today = DateTime.UtcNow;
                 //week is checked this is our appointment list
                 if (week)
@@ -153,7 +153,7 @@ namespace DevinMinaC868
                     DateTime saturday = today.AddDays(-(int)today.DayOfWeek + (int)DayOfWeek.Saturday);
                     if (start >= sunday && end < saturday)
                     {
-                        parsedAppointments.Add(appointment.Key, appointment.Value);
+                        parsedAppts.Add(appt.Key, appt.Value);
                     }
                 }
                 //if not we get month appointments
@@ -163,14 +163,14 @@ namespace DevinMinaC868
                     DateTime lastOfMonth = firstOfMonth.AddMonths(1).AddDays(-1);
                     if (start >= firstOfMonth && end < lastOfMonth)
                     {
-                        parsedAppointments.Add(appointment.Key, appointment.Value);
+                        parsedAppts.Add(appt.Key, appt.Value);
                     }
                 }
             }
 
             //what we display to the user in the calendar view
             dbHelp.setAppts(appointments);
-            var apptArray = from row in parsedAppointments
+            var apptArray = from row in parsedAppts
                             select new
                             {
                                 id = row.Key,
@@ -179,7 +179,7 @@ namespace DevinMinaC868
                                 end = Convert.ToDateTime(row.Value["end"].ToString()).ToLocalTime(),
                                 customer = row.Value["customerName"]
                             };
-            connection.Close();
+            conn.Close();
             return apptArray.ToArray();
 
         }
