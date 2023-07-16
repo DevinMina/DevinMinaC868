@@ -346,16 +346,17 @@ namespace DevinMinaC868
             // 
             // searchBox
             // 
-            this.searchBox.Location = new System.Drawing.Point(287, 106);
+            this.searchBox.Location = new System.Drawing.Point(87, 521);
             this.searchBox.Name = "searchBox";
             this.searchBox.Size = new System.Drawing.Size(177, 20);
             this.searchBox.TabIndex = 25;
-            this.searchBox.Text = "Search Box";
+            this.searchBox.Text = "Search Customer Name";
+            this.searchBox.TextChanged += new System.EventHandler(this.txtBox_search_TextChanged);
             // 
             // dgv_customers
             // 
             this.dgv_customers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_customers.Location = new System.Drawing.Point(161, 628);
+            this.dgv_customers.Location = new System.Drawing.Point(58, 547);
             this.dgv_customers.Name = "dgv_customers";
             this.dgv_customers.Size = new System.Drawing.Size(698, 150);
             this.dgv_customers.TabIndex = 26;
@@ -364,7 +365,7 @@ namespace DevinMinaC868
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1061, 1005);
+            this.ClientSize = new System.Drawing.Size(1061, 872);
             this.Controls.Add(this.dgv_customers);
             this.Controls.Add(this.searchBox);
             this.Controls.Add(this.appointmentsByConsultant);

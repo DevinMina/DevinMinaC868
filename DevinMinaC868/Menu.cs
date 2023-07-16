@@ -1,13 +1,13 @@
-﻿using MySql.Data.MySqlClient;
+﻿using DevinMinaC868.Appt;
+using DevinMinaC868.Reporting;
+using DevinMinaC868.User;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Windows.Forms;
-using DevinMinaC868.Appt;
-using DevinMinaC868.Reporting;
-using DevinMinaC868.User;
 
 namespace DevinMinaC868
 {
@@ -18,7 +18,26 @@ namespace DevinMinaC868
         {
             InitializeComponent();
             appointmentCalendar.DataSource = displayCalendar(weekRadio.Checked);
-            //displayReminder(appointmentCalendar);
+            update_customers();
+            //updates customers dgv
+
+        }
+
+        private void txtBox_search_TextChanged(object sender, EventArgs e)
+        {
+            string search = searchBox.Text.ToLower();
+            try
+            {
+                var re = from row in customer_dt.AsEnumerable()
+                    where row[1].ToString().ToLower().Contains(search)
+                    select row;
+
+                dgv_customers.DataSource = re.CopyToDataTable();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         public void updateCalendar()
@@ -152,14 +171,14 @@ namespace DevinMinaC868
             //what we display to the user in the calendar view
             dbHelp.setAppointments(appointments);
             var apptArray = from row in parsedAppointments
-                select new
-                {
-                    id = row.Key,
-                    type = row.Value["type"],
-                    start = Convert.ToDateTime(row.Value["start"].ToString()).ToLocalTime(),
-                    end = Convert.ToDateTime(row.Value["end"].ToString()).ToLocalTime(),
-                    customer = row.Value["customerName"]
-                };
+                            select new
+                            {
+                                id = row.Key,
+                                type = row.Value["type"],
+                                start = Convert.ToDateTime(row.Value["start"].ToString()).ToLocalTime(),
+                                end = Convert.ToDateTime(row.Value["end"].ToString()).ToLocalTime(),
+                                customer = row.Value["customerName"]
+                            };
             connection.Close();
             return apptArray.ToArray();
 
