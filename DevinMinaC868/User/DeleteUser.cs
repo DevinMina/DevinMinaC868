@@ -26,18 +26,18 @@ namespace DevinMinaC868.User
         public DeleteUser()
         {
             InitializeComponent();
-            populateUserList();
+            popUserList();
             comboBoxDefaultSettings();
         }
 
-        public void populateUserList()
+        public void popUserList()
         {
-            MySqlConnection connection = new MySqlConnection(dbHelp.getConnectionString());
+            MySqlConnection conn = new MySqlConnection(dbHelp.getConnectionString());
             try
             {
                 string query = "SELECT userId, concat(userName, ' --ID: ', userId) as Display FROM user;";
-                MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter(query, connection);
-                connection.Open();
+                MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter(query, conn);
+                conn.Open();
                 DataSet dataSet = new DataSet();
                 mySqlDataAdapter.Fill(dataSet, "User");
                 deleteComboBox.DisplayMember = "Display";
@@ -90,8 +90,8 @@ namespace DevinMinaC868.User
             }
             else
             {
-                DialogResult confirmation = MessageBox.Show("Would you like to delete this user? This cannot be undone.", "", MessageBoxButtons.YesNo);
-                if (confirmation == DialogResult.Yes)
+                DialogResult confirm = MessageBox.Show("Would you like to delete this user? This cannot be undone.", "", MessageBoxButtons.YesNo);
+                if (confirm == DialogResult.Yes)
                 {
                     try
                     {
@@ -103,7 +103,7 @@ namespace DevinMinaC868.User
                         dbHelp.deleteUser(dictionary["userId"].ToString());
                         MessageBox.Show("User successfully deleted.");
                         //refresh appointment list
-                        populateUserList();
+                        popUserList();
                         this.Owner.Show();
                         this.Close();
                     }

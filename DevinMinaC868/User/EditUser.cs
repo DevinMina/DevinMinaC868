@@ -17,7 +17,7 @@ namespace DevinMinaC868.User
         public EditUser()
         {
             InitializeComponent();
-            populateUserList();
+            popUserList();
             comboBoxDefaultSettings();
 
 
@@ -48,15 +48,15 @@ namespace DevinMinaC868.User
             noRadio.Enabled = false;
             updateButton.Enabled = false;
         }
-        public void populateUserList()
+        public void popUserList()
         {
-            MySqlConnection connection = new MySqlConnection(dbHelp.getConnectionString());
+            MySqlConnection conn = new MySqlConnection(dbHelp.getConnectionString());
 
             try
             {
                 string query = "SELECT userId, concat(userName, ' --ID: ', userId) as Display FROM user;";
-                MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter(query, connection);
-                connection.Open();
+                MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter(query, conn);
+                conn.Open();
                 DataSet dataSet = new DataSet();
                 mySqlDataAdapter.Fill(dataSet, "User");
                 modifyComboBox.DisplayMember = "Display";
@@ -97,8 +97,8 @@ namespace DevinMinaC868.User
 
             if (pass == true)
             {
-                DialogResult confirmation = MessageBox.Show("Are you sure you want to update this user?", "", MessageBoxButtons.YesNo);
-                if (confirmation == DialogResult.Yes)
+                DialogResult confirm = MessageBox.Show("Are you sure you want to update this user?", "", MessageBoxButtons.YesNo);
+                if (confirm == DialogResult.Yes)
                 {
                     if (password.Text == password2.Text)
                     {
