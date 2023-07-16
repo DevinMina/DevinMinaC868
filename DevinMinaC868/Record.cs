@@ -27,15 +27,15 @@ namespace DevinMinaC868
                 IDictionary<string, object> dictionary = list.ToDictionary(pair => pair.Key, pair => pair.Value);
                 DateTime? currentTime = getTime();
                 string type = dictionary["type"].ToString();
-                DateTime? nextAppointment = Convert.ToDateTime(dictionary["start"]);
+                DateTime? nextAppt = Convert.ToDateTime(dictionary["start"]);
                 string name = dictionary["name"].ToString();
-                if (currentTime != null && nextAppointment != null)
+                if (currentTime != null && nextAppt != null)
                 {
                     DateTime dateTime = currentTime.Value;
-                    DateTime dateTime2 = nextAppointment.Value;
-                    string dateString = nextAppointment.Value.ToString("h:mm tt");
-                    TimeSpan difference = dateTime2.Subtract(dateTime);
-                    if (difference.Minutes < 15)
+                    DateTime dateTime2 = nextAppt.Value;
+                    string dateString = nextAppt.Value.ToString("h:mm tt");
+                    TimeSpan diff = dateTime2.Subtract(dateTime);
+                    if (diff.Minutes < 15)
                     {
                         MessageBox.Show("Reminder: You have a " + type + " appointment at " + dateString + " with " + name + "!");
                     }
