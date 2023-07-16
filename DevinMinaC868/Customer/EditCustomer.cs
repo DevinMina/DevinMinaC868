@@ -13,21 +13,21 @@ namespace DevinMinaC868
 {
     public partial class EditCustomer : Form
     {
-        public static List<KeyValuePair<string, object>> CustList;
+        public static List<KeyValuePair<string, object>> CustomerList;
         public EditCustomer()
         {
             InitializeComponent();
-            populateCustomerList();
+            popCustomerList();
             comboBoxDefaultSettings();
         }
 
-        public void setCustList(List<KeyValuePair<string, object>> list)
+        public void setCustomerList(List<KeyValuePair<string, object>> list)
         {
-            CustList = list;
+            CustomerList = list;
         }
-        public static List<KeyValuePair<string, object>> getCustList()
+        public static List<KeyValuePair<string, object>> getCustomerList()
         {
-            return CustList;
+            return CustomerList;
         }
 
         //sets form to be locked and provides a default value for the comboBox
@@ -53,15 +53,15 @@ namespace DevinMinaC868
             noRadio.Enabled = false;
             updateButton.Enabled = false;
         }
-        public void populateCustomerList()
+        public void popCustomerList()
         {
-            MySqlConnection connection = new MySqlConnection(dbHelp.getConnectionString());
+            MySqlConnection conn = new MySqlConnection(dbHelp.getConnectionString());
 
             try
             {
                 string query = "SELECT customerId, concat(customerName, ' --ID: ', customerId) as Display FROM customer;";
-                MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter(query, connection);
-                connection.Open();
+                MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter(query, conn);
+                conn.Open();
                 DataSet dataSet = new DataSet();
                 mySqlDataAdapter.Fill(dataSet, "Cust");
                 modifyComboBox.DisplayMember = "Display";
@@ -98,7 +98,7 @@ namespace DevinMinaC868
             DataRowView dataRowView = modifyComboBox.SelectedItem as DataRowView;
             int id = Convert.ToInt32(modifyComboBox.SelectedValue);
             var customerList = dbHelp.findCustomer(id);
-            setCustList(customerList);
+            setCustomerList(customerList);
             if (customerList != null)
             {
                 populateFields(customerList);
@@ -130,7 +130,7 @@ namespace DevinMinaC868
                 {
                     try
                     {
-                        var list = getCustList();
+                        var list = getCustomerList();
                         //lambda expression to convert list to dictionary
                         IDictionary<string, object> dictionary = list.ToDictionary(pair => pair.Key, pair => pair.Value);
                         dictionary["customerName"] = nameText.Text;

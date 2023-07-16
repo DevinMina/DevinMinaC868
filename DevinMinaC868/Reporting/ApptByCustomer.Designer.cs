@@ -32,7 +32,7 @@ namespace DevinMinaC868.Reporting
             this.date = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.custComboBox = new System.Windows.Forms.ComboBox();
+            this.customerComboBox = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -66,14 +66,14 @@ namespace DevinMinaC868.Reporting
             this.label1.TabIndex = 131;
             this.label1.Text = "Select the customer you wish to see appointments for:";
             // 
-            // custComboBox
+            // customerComboBox
             // 
-            this.custComboBox.FormattingEnabled = true;
-            this.custComboBox.Location = new System.Drawing.Point(192, 29);
-            this.custComboBox.Name = "custComboBox";
-            this.custComboBox.Size = new System.Drawing.Size(290, 21);
-            this.custComboBox.TabIndex = 130;
-            this.custComboBox.SelectedValueChanged += new System.EventHandler(this.CustComboBox_SelectedValueChanged);
+            this.customerComboBox.FormattingEnabled = true;
+            this.customerComboBox.Location = new System.Drawing.Point(192, 29);
+            this.customerComboBox.Name = "customerComboBox";
+            this.customerComboBox.Size = new System.Drawing.Size(290, 21);
+            this.customerComboBox.TabIndex = 130;
+            this.customerComboBox.SelectedValueChanged += new System.EventHandler(this.CustComboBox_SelectedValueChanged);
             // 
             // dataGridView1
             // 
@@ -93,7 +93,7 @@ namespace DevinMinaC868.Reporting
             this.Controls.Add(this.date);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.custComboBox);
+            this.Controls.Add(this.customerComboBox);
             this.Controls.Add(this.dataGridView1);
             this.Name = "ApptByCustomer";
             this.Text = "ApptByCustomer";
@@ -108,7 +108,7 @@ namespace DevinMinaC868.Reporting
         private System.Windows.Forms.Label date;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox custComboBox;
+        private System.Windows.Forms.ComboBox customerComboBox;
         private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

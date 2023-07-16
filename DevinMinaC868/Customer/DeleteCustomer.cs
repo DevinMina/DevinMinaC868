@@ -17,20 +17,20 @@ namespace DevinMinaC868
         public DeleteCustomer()
         {
             InitializeComponent();
-            populateCustomerList();
+            popCustomerList();
             comboBoxDefaultSettings();
         }
 
         //fills combobox with customers from database
-        public void populateCustomerList()
+        public void popCustomerList()
         {
-            MySqlConnection connection = new MySqlConnection(dbHelp.getConnectionString());
+            MySqlConnection conn = new MySqlConnection(dbHelp.getConnectionString());
 
             try
             {
                 string query = "SELECT customerId, concat(customerName, ' --ID: ', customerId) as Display FROM customer;";
-                MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter(query, connection);
-                connection.Open();
+                MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter(query, conn);
+                conn.Open();
                 DataSet dataSet = new DataSet();
                 mySqlDataAdapter.Fill(dataSet, "Cust");
                 deleteComboBox.DisplayMember = "Display";
@@ -156,22 +156,22 @@ namespace DevinMinaC868
 
         private void DeleteButton_Click(object sender, EventArgs e)
         {
-            DialogResult confirmation = MessageBox.Show("Are you sure you want to delete this customer? This cannot be undone.", "", MessageBoxButtons.YesNo);
-            if (confirmation == DialogResult.Yes)
+            DialogResult confirm = MessageBox.Show("Are you sure you want to delete this customer? This cannot be undone.", "", MessageBoxButtons.YesNo);
+            if (confirm == DialogResult.Yes)
             {
                 try
                 {
                     var list = getCustList();
                     IDictionary<string, object> dictionary = list.ToDictionary(pair => pair.Key, pair => pair.Value);
-                    bool appointments = dbHelp.checkAppointments(dictionary["customerId"].ToString());
-                    if (appointments == false)
+                    bool appts = dbHelp.checkAppointments(dictionary["customerId"].ToString());
+                    if (appts == false)
                     {
                         dbHelp.deleteCustomer(dictionary);
                     }
                     else
                     {
-                        DialogResult confirmation2 = MessageBox.Show("Deleting this customer will also remove all associated appointments, are you sure?", "", MessageBoxButtons.YesNo);
-                        if (confirmation2 == DialogResult.Yes)
+                        DialogResult confirm2 = MessageBox.Show("Deleting this customer will also remove all associated appointments, are you sure?", "", MessageBoxButtons.YesNo);
+                        if (confirm2 == DialogResult.Yes)
                         {
                             dbHelp.deleteCustAppointments(dictionary["customerId"].ToString());
                             dbHelp.deleteCustomer(dictionary);

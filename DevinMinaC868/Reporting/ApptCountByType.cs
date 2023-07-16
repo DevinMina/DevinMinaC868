@@ -30,10 +30,5 @@ namespace DevinMinaC868.Reporting
             this.Owner.Show();
             this.Close();
         }
-
-        private void ApptCountByType_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

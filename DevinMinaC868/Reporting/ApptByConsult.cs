@@ -16,21 +16,21 @@ namespace DevinMinaC868.Reporting
         public ApptByConsult()
         {
             InitializeComponent();
-            populateUserList();
+            popUserList();
             userComboBox.SelectedItem = null;
             dataGridView1.Visible = false;
             userComboBox.Text = "--Select--";
             date.Text = DateTime.Now.ToString();
         }
-        public void populateUserList()
+        public void popUserList()
         {
-            MySqlConnection connection = new MySqlConnection(dbHelp.getConnectionString());
+            MySqlConnection conn = new MySqlConnection(dbHelp.getConnectionString());
 
             try
             {
                 string query = "SELECT userId, concat(userName, ' --ID: ', userId) as Display FROM user;";
-                MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter(query, connection);
-                connection.Open();
+                MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter(query, conn);
+                conn.Open();
                 DataSet dataSet = new DataSet();
                 mySqlDataAdapter.Fill(dataSet, "User");
                 userComboBox.DisplayMember = "Display";

@@ -63,18 +63,20 @@ namespace DevinMinaC868.Reporting
             // date
             // 
             this.date.AutoSize = true;
-            this.date.Location = new System.Drawing.Point(110, 196);
+            this.date.Location = new System.Drawing.Point(185, 373);
+            this.date.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.date.Name = "date";
-            this.date.Size = new System.Drawing.Size(28, 13);
+            this.date.Size = new System.Drawing.Size(34, 16);
             this.date.TabIndex = 157;
             this.date.Text = "date";
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(29, 188);
+            this.button1.Location = new System.Drawing.Point(77, 363);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(100, 28);
             this.button1.TabIndex = 156;
             this.button1.Text = "Cancel";
             this.button1.UseVisualStyleBackColor = false;
@@ -83,54 +85,60 @@ namespace DevinMinaC868.Reporting
             // aug
             // 
             this.aug.AutoSize = true;
-            this.aug.Location = new System.Drawing.Point(194, 102);
+            this.aug.Location = new System.Drawing.Point(328, 187);
+            this.aug.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.aug.Name = "aug";
-            this.aug.Size = new System.Drawing.Size(13, 13);
+            this.aug.Size = new System.Drawing.Size(14, 16);
             this.aug.TabIndex = 155;
             this.aug.Text = "0";
             // 
             // sep
             // 
             this.sep.AutoSize = true;
-            this.sep.Location = new System.Drawing.Point(194, 119);
+            this.sep.Location = new System.Drawing.Point(328, 207);
+            this.sep.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.sep.Name = "sep";
-            this.sep.Size = new System.Drawing.Size(13, 13);
+            this.sep.Size = new System.Drawing.Size(14, 16);
             this.sep.TabIndex = 154;
             this.sep.Text = "0";
             // 
             // oct
             // 
             this.oct.AutoSize = true;
-            this.oct.Location = new System.Drawing.Point(194, 138);
+            this.oct.Location = new System.Drawing.Point(328, 231);
+            this.oct.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.oct.Name = "oct";
-            this.oct.Size = new System.Drawing.Size(13, 13);
+            this.oct.Size = new System.Drawing.Size(14, 16);
             this.oct.TabIndex = 153;
             this.oct.Text = "0";
             // 
             // nov
             // 
             this.nov.AutoSize = true;
-            this.nov.Location = new System.Drawing.Point(194, 153);
+            this.nov.Location = new System.Drawing.Point(328, 249);
+            this.nov.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.nov.Name = "nov";
-            this.nov.Size = new System.Drawing.Size(13, 13);
+            this.nov.Size = new System.Drawing.Size(14, 16);
             this.nov.TabIndex = 152;
             this.nov.Text = "0";
             // 
             // dec
             // 
             this.dec.AutoSize = true;
-            this.dec.Location = new System.Drawing.Point(194, 170);
+            this.dec.Location = new System.Drawing.Point(328, 270);
+            this.dec.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.dec.Name = "dec";
-            this.dec.Size = new System.Drawing.Size(13, 13);
+            this.dec.Size = new System.Drawing.Size(14, 16);
             this.dec.TabIndex = 151;
             this.dec.Text = "0";
             // 
             // jul
             // 
             this.jul.AutoSize = true;
-            this.jul.Location = new System.Drawing.Point(194, 87);
+            this.jul.Location = new System.Drawing.Point(328, 168);
+            this.jul.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.jul.Name = "jul";
-            this.jul.Size = new System.Drawing.Size(13, 13);
+            this.jul.Size = new System.Drawing.Size(14, 16);
             this.jul.TabIndex = 150;
             this.jul.Text = "0";
             // 
@@ -138,9 +146,10 @@ namespace DevinMinaC868.Reporting
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(109, 100);
+            this.label16.Location = new System.Drawing.Point(214, 184);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(56, 17);
+            this.label16.Size = new System.Drawing.Size(66, 20);
             this.label16.TabIndex = 149;
             this.label16.Text = "August:";
             // 
@@ -148,9 +157,10 @@ namespace DevinMinaC868.Reporting
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(109, 117);
+            this.label17.Location = new System.Drawing.Point(214, 205);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(81, 17);
+            this.label17.Size = new System.Drawing.Size(95, 20);
             this.label17.TabIndex = 148;
             this.label17.Text = "September:";
             // 
@@ -158,9 +168,10 @@ namespace DevinMinaC868.Reporting
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(109, 134);
+            this.label18.Location = new System.Drawing.Point(214, 226);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(63, 17);
+            this.label18.Size = new System.Drawing.Size(74, 20);
             this.label18.TabIndex = 147;
             this.label18.Text = "October:";
             // 
@@ -168,9 +179,10 @@ namespace DevinMinaC868.Reporting
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(109, 150);
+            this.label19.Location = new System.Drawing.Point(214, 246);
+            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(77, 17);
+            this.label19.Size = new System.Drawing.Size(90, 20);
             this.label19.TabIndex = 146;
             this.label19.Text = "November:";
             // 
@@ -178,9 +190,10 @@ namespace DevinMinaC868.Reporting
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(109, 167);
+            this.label20.Location = new System.Drawing.Point(214, 267);
+            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(77, 17);
+            this.label20.Size = new System.Drawing.Size(92, 20);
             this.label20.TabIndex = 145;
             this.label20.Text = "December:";
             // 
@@ -188,83 +201,92 @@ namespace DevinMinaC868.Reporting
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(109, 83);
+            this.label21.Location = new System.Drawing.Point(214, 163);
+            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(37, 17);
+            this.label21.Size = new System.Drawing.Size(44, 20);
             this.label21.TabIndex = 144;
             this.label21.Text = "July:";
             // 
             // feb
             // 
             this.feb.AutoSize = true;
-            this.feb.Location = new System.Drawing.Point(90, 102);
+            this.feb.Location = new System.Drawing.Point(115, 186);
+            this.feb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.feb.Name = "feb";
-            this.feb.Size = new System.Drawing.Size(13, 13);
+            this.feb.Size = new System.Drawing.Size(14, 16);
             this.feb.TabIndex = 143;
             this.feb.Text = "0";
             // 
             // mar
             // 
             this.mar.AutoSize = true;
-            this.mar.Location = new System.Drawing.Point(90, 119);
+            this.mar.Location = new System.Drawing.Point(115, 206);
+            this.mar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.mar.Name = "mar";
-            this.mar.Size = new System.Drawing.Size(13, 13);
+            this.mar.Size = new System.Drawing.Size(14, 16);
             this.mar.TabIndex = 142;
             this.mar.Text = "0";
             // 
             // apr
             // 
             this.apr.AutoSize = true;
-            this.apr.Location = new System.Drawing.Point(90, 138);
+            this.apr.Location = new System.Drawing.Point(115, 230);
+            this.apr.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.apr.Name = "apr";
-            this.apr.Size = new System.Drawing.Size(13, 13);
+            this.apr.Size = new System.Drawing.Size(14, 16);
             this.apr.TabIndex = 141;
             this.apr.Text = "0";
             // 
             // may
             // 
             this.may.AutoSize = true;
-            this.may.Location = new System.Drawing.Point(90, 153);
+            this.may.Location = new System.Drawing.Point(115, 248);
+            this.may.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.may.Name = "may";
-            this.may.Size = new System.Drawing.Size(13, 13);
+            this.may.Size = new System.Drawing.Size(14, 16);
             this.may.TabIndex = 140;
             this.may.Text = "0";
             // 
             // jun
             // 
             this.jun.AutoSize = true;
-            this.jun.Location = new System.Drawing.Point(90, 170);
+            this.jun.Location = new System.Drawing.Point(115, 269);
+            this.jun.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.jun.Name = "jun";
-            this.jun.Size = new System.Drawing.Size(13, 13);
+            this.jun.Size = new System.Drawing.Size(14, 16);
             this.jun.TabIndex = 139;
             this.jun.Text = "0";
             // 
             // jan
             // 
             this.jan.AutoSize = true;
-            this.jan.Location = new System.Drawing.Point(90, 87);
+            this.jan.Location = new System.Drawing.Point(115, 167);
+            this.jan.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.jan.Name = "jan";
-            this.jan.Size = new System.Drawing.Size(13, 13);
+            this.jan.Size = new System.Drawing.Size(14, 16);
             this.jan.TabIndex = 138;
             this.jan.Text = "0";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 39);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(29, 53);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(204, 17);
+            this.label1.Size = new System.Drawing.Size(311, 25);
             this.label1.TabIndex = 137;
             this.label1.Text = "to view appointment counts for:";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(30, 22);
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(63, 19);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(160, 17);
+            this.label14.Size = new System.Drawing.Size(246, 25);
             this.label14.TabIndex = 136;
             this.label14.Text = "Select the type you wish";
             // 
@@ -272,9 +294,10 @@ namespace DevinMinaC868.Reporting
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(26, 100);
+            this.label13.Location = new System.Drawing.Point(30, 183);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(69, 17);
+            this.label13.Size = new System.Drawing.Size(80, 20);
             this.label13.TabIndex = 135;
             this.label13.Text = "February:";
             // 
@@ -282,9 +305,10 @@ namespace DevinMinaC868.Reporting
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(26, 117);
+            this.label12.Location = new System.Drawing.Point(30, 204);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(51, 17);
+            this.label12.Size = new System.Drawing.Size(61, 20);
             this.label12.TabIndex = 134;
             this.label12.Text = "March:";
             // 
@@ -292,9 +316,10 @@ namespace DevinMinaC868.Reporting
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(26, 134);
+            this.label11.Location = new System.Drawing.Point(30, 225);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(40, 17);
+            this.label11.Size = new System.Drawing.Size(48, 20);
             this.label11.TabIndex = 133;
             this.label11.Text = "April:";
             // 
@@ -302,9 +327,10 @@ namespace DevinMinaC868.Reporting
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(26, 150);
+            this.label10.Location = new System.Drawing.Point(30, 245);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(38, 17);
+            this.label10.Size = new System.Drawing.Size(45, 20);
             this.label10.TabIndex = 132;
             this.label10.Text = "May:";
             // 
@@ -312,9 +338,10 @@ namespace DevinMinaC868.Reporting
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(26, 167);
+            this.label9.Location = new System.Drawing.Point(30, 266);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(43, 17);
+            this.label9.Size = new System.Drawing.Size(50, 20);
             this.label9.TabIndex = 131;
             this.label9.Text = "June:";
             // 
@@ -322,9 +349,10 @@ namespace DevinMinaC868.Reporting
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(26, 83);
+            this.label2.Location = new System.Drawing.Point(30, 162);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 17);
+            this.label2.Size = new System.Drawing.Size(73, 20);
             this.label2.TabIndex = 130;
             this.label2.Text = "January:";
             // 
@@ -338,17 +366,18 @@ namespace DevinMinaC868.Reporting
             "Consultation",
             "Other",
             "Root Canal"});
-            this.typeComboBox.Location = new System.Drawing.Point(43, 59);
+            this.typeComboBox.Location = new System.Drawing.Point(77, 104);
+            this.typeComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.typeComboBox.Name = "typeComboBox";
-            this.typeComboBox.Size = new System.Drawing.Size(143, 21);
+            this.typeComboBox.Size = new System.Drawing.Size(203, 24);
             this.typeComboBox.TabIndex = 129;
             this.typeComboBox.SelectedValueChanged += new System.EventHandler(this.TypeComboBox_SelectedValueChanged);
             // 
             // ApptByMonth
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(224, 224);
+            this.ClientSize = new System.Drawing.Size(395, 413);
             this.Controls.Add(this.date);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.aug);
@@ -378,6 +407,7 @@ namespace DevinMinaC868.Reporting
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.typeComboBox);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ApptByMonth";
             this.Text = "ApptByMonth";
             this.ResumeLayout(false);

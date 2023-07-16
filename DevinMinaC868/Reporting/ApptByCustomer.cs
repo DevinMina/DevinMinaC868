@@ -16,26 +16,26 @@ namespace DevinMinaC868.Reporting
         public ApptByCustomer()
         {
             InitializeComponent();
-            populateCustomerList();
-            custComboBox.SelectedItem = null;
+            popCustomerList();
+            customerComboBox.SelectedItem = null;
             dataGridView1.Visible = false;
-            custComboBox.Text = "--Select--";
+            customerComboBox.Text = "--Select--";
             date.Text = DateTime.Now.ToString();
         }
-        public void populateCustomerList()
+        public void popCustomerList()
         {
-            MySqlConnection connection = new MySqlConnection(dbHelp.getConnectionString());
+            MySqlConnection conn = new MySqlConnection(dbHelp.getConnectionString());
 
             try
             {
                 string query = "SELECT customerId, concat(customerName, ' --ID: ', customerId) as Display FROM customer;";
-                MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter(query, connection);
-                connection.Open();
+                MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter(query, conn);
+                conn.Open();
                 DataSet dataSet = new DataSet();
                 mySqlDataAdapter.Fill(dataSet, "Cust");
-                custComboBox.DisplayMember = "Display";
-                custComboBox.ValueMember = "customerId";
-                custComboBox.DataSource = dataSet.Tables["Cust"];
+                customerComboBox.DisplayMember = "Display";
+                customerComboBox.ValueMember = "customerId";
+                customerComboBox.DataSource = dataSet.Tables["Cust"];
             }
             catch (Exception ex)
             {
@@ -45,9 +45,9 @@ namespace DevinMinaC868.Reporting
 
         private void CustComboBox_SelectedValueChanged(object sender, EventArgs e)
         {
-            if (custComboBox.SelectedIndex != -1)
+            if (customerComboBox.SelectedIndex != -1)
             {
-                int id = Convert.ToInt32(custComboBox.SelectedValue);
+                int id = Convert.ToInt32(customerComboBox.SelectedValue);
                 DataTable dataTableRecord = dbHelp.getAppointmentListByCustomer(id.ToString());
                 dataGridView1.DataSource = dataTableRecord;
                 dataGridView1.Visible = true;
