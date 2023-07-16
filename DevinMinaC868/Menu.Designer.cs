@@ -93,12 +93,14 @@ namespace DevinMinaC868
             // deleteUser
             // 
             this.deleteUser.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.deleteUser.Cursor = System.Windows.Forms.Cursors.No;
             this.deleteUser.Location = new System.Drawing.Point(25, 273);
             this.deleteUser.Name = "deleteUser";
             this.deleteUser.Size = new System.Drawing.Size(247, 23);
             this.deleteUser.TabIndex = 24;
             this.deleteUser.Text = "Delete User";
             this.deleteUser.UseVisualStyleBackColor = false;
+            this.deleteUser.Visible = false;
             this.deleteUser.Click += new System.EventHandler(this.deleteUser_Click);
             // 
             // modifyUser
@@ -337,6 +339,8 @@ namespace DevinMinaC868
             this.searchBox.TabIndex = 25;
             this.searchBox.Text = "Search Customer Name";
             this.searchBox.TextChanged += new System.EventHandler(this.txtBox_search_TextChanged);
+            this.searchBox.Enter += new System.EventHandler(this.searchBox_Enter);
+            this.searchBox.Leave += new System.EventHandler(this.searchBox_Leave);
             // 
             // dgv_customers
             // 

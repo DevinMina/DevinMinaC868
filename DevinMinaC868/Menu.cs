@@ -6,6 +6,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -270,5 +271,28 @@ namespace DevinMinaC868
 
             dgv_customers.DataSource = customer_dt;
         }
+
+
+        //SearchBox Enter/Leave 
+        private void searchBox_Enter(object sender, EventArgs e)
+        {
+            if (searchBox.Text.Contains("Search Customer Name"))
+            {
+                searchBox.Text = "";
+                searchBox.ForeColor = Color.Black;
+            }
+        }
+
+        private void searchBox_Leave(object sender, EventArgs e)
+        {
+            if (searchBox.Text == "")
+            {
+                searchBox.Text = "Search Customer Name";
+                searchBox.ForeColor = Color.DimGray;
+            }
+        }
+
+
+
     }
 }
