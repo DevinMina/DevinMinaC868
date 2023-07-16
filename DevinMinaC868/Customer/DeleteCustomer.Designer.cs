@@ -46,9 +46,9 @@ namespace DevinMinaC868
             this.cityText = new System.Windows.Forms.TextBox();
             this.addressText = new System.Windows.Forms.TextBox();
             this.phoneText = new System.Windows.Forms.TextBox();
-            this.nameText = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.deleteComboBox = new System.Windows.Forms.ComboBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label9
@@ -63,7 +63,7 @@ namespace DevinMinaC868
             // cancelButton
             // 
             this.cancelButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cancelButton.Location = new System.Drawing.Point(160, 291);
+            this.cancelButton.Location = new System.Drawing.Point(271, 291);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 23);
             this.cancelButton.TabIndex = 58;
@@ -85,7 +85,7 @@ namespace DevinMinaC868
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(45, 246);
+            this.label8.Location = new System.Drawing.Point(46, 258);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(37, 13);
             this.label8.TabIndex = 56;
@@ -149,7 +149,7 @@ namespace DevinMinaC868
             // 
             this.noRadio.AutoSize = true;
             this.noRadio.Enabled = false;
-            this.noRadio.Location = new System.Drawing.Point(196, 246);
+            this.noRadio.Location = new System.Drawing.Point(197, 258);
             this.noRadio.Name = "noRadio";
             this.noRadio.Size = new System.Drawing.Size(39, 17);
             this.noRadio.TabIndex = 49;
@@ -161,7 +161,7 @@ namespace DevinMinaC868
             // 
             this.yesRadio.AutoSize = true;
             this.yesRadio.Enabled = false;
-            this.yesRadio.Location = new System.Drawing.Point(135, 247);
+            this.yesRadio.Location = new System.Drawing.Point(136, 259);
             this.yesRadio.Name = "yesRadio";
             this.yesRadio.Size = new System.Drawing.Size(43, 17);
             this.yesRadio.TabIndex = 48;
@@ -201,7 +201,7 @@ namespace DevinMinaC868
             this.addressText.Enabled = false;
             this.addressText.Location = new System.Drawing.Point(135, 139);
             this.addressText.Name = "addressText";
-            this.addressText.Size = new System.Drawing.Size(100, 20);
+            this.addressText.Size = new System.Drawing.Size(211, 20);
             this.addressText.TabIndex = 44;
             this.addressText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.AddressText_KeyPress);
             // 
@@ -210,18 +210,9 @@ namespace DevinMinaC868
             this.phoneText.Enabled = false;
             this.phoneText.Location = new System.Drawing.Point(135, 112);
             this.phoneText.Name = "phoneText";
-            this.phoneText.Size = new System.Drawing.Size(100, 20);
+            this.phoneText.Size = new System.Drawing.Size(211, 20);
             this.phoneText.TabIndex = 43;
             this.phoneText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PhoneText_KeyPress);
-            // 
-            // nameText
-            // 
-            this.nameText.Enabled = false;
-            this.nameText.Location = new System.Drawing.Point(135, 86);
-            this.nameText.Name = "nameText";
-            this.nameText.Size = new System.Drawing.Size(100, 20);
-            this.nameText.TabIndex = 42;
-            this.nameText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NameText_KeyPress);
             // 
             // label1
             // 
@@ -237,16 +228,24 @@ namespace DevinMinaC868
             this.deleteComboBox.FormattingEnabled = true;
             this.deleteComboBox.Location = new System.Drawing.Point(135, 53);
             this.deleteComboBox.Name = "deleteComboBox";
-            this.deleteComboBox.Size = new System.Drawing.Size(121, 21);
+            this.deleteComboBox.Size = new System.Drawing.Size(211, 21);
             this.deleteComboBox.TabIndex = 40;
             this.deleteComboBox.Text = "--Select--";
             this.deleteComboBox.SelectedValueChanged += new System.EventHandler(this.DeleteComboBox_SelectedValueChanged);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(135, 86);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(211, 20);
+            this.textBox1.TabIndex = 42;
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NameText_KeyPress);
             // 
             // DeleteCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(285, 332);
+            this.ClientSize = new System.Drawing.Size(359, 328);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.deleteButton);
@@ -264,7 +263,7 @@ namespace DevinMinaC868
             this.Controls.Add(this.cityText);
             this.Controls.Add(this.addressText);
             this.Controls.Add(this.phoneText);
-            this.Controls.Add(this.nameText);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.deleteComboBox);
             this.Name = "DeleteCustomer";
@@ -293,8 +292,8 @@ namespace DevinMinaC868
         private System.Windows.Forms.TextBox cityText;
         private System.Windows.Forms.TextBox addressText;
         private System.Windows.Forms.TextBox phoneText;
-        private System.Windows.Forms.TextBox nameText;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox deleteComboBox;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

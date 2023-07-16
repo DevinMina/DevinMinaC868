@@ -55,7 +55,7 @@ namespace DevinMinaC868.Appt
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(16, 72);
+            this.label10.Location = new System.Drawing.Point(423, 46);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(99, 13);
             this.label10.TabIndex = 84;
@@ -64,7 +64,7 @@ namespace DevinMinaC868.Appt
             // appointmentComboBox
             // 
             this.appointmentComboBox.FormattingEnabled = true;
-            this.appointmentComboBox.Location = new System.Drawing.Point(131, 72);
+            this.appointmentComboBox.Location = new System.Drawing.Point(538, 46);
             this.appointmentComboBox.Name = "appointmentComboBox";
             this.appointmentComboBox.Size = new System.Drawing.Size(260, 21);
             this.appointmentComboBox.TabIndex = 83;
@@ -80,7 +80,7 @@ namespace DevinMinaC868.Appt
             "Consultation",
             "Other",
             "Root Canal"});
-            this.typeComboBox.Location = new System.Drawing.Point(131, 256);
+            this.typeComboBox.Location = new System.Drawing.Point(131, 126);
             this.typeComboBox.Name = "typeComboBox";
             this.typeComboBox.Size = new System.Drawing.Size(260, 21);
             this.typeComboBox.TabIndex = 82;
@@ -90,7 +90,7 @@ namespace DevinMinaC868.Appt
             this.startDateValue.Checked = false;
             this.startDateValue.CustomFormat = "MM/dd/yyyy hh:mm tt";
             this.startDateValue.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.startDateValue.Location = new System.Drawing.Point(131, 284);
+            this.startDateValue.Location = new System.Drawing.Point(538, 100);
             this.startDateValue.Name = "startDateValue";
             this.startDateValue.Size = new System.Drawing.Size(260, 20);
             this.startDateValue.TabIndex = 81;
@@ -100,7 +100,7 @@ namespace DevinMinaC868.Appt
             this.endDateValue.Checked = false;
             this.endDateValue.CustomFormat = "MM/dd/yyyy hh:mm tt";
             this.endDateValue.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.endDateValue.Location = new System.Drawing.Point(131, 310);
+            this.endDateValue.Location = new System.Drawing.Point(538, 126);
             this.endDateValue.Name = "endDateValue";
             this.endDateValue.Size = new System.Drawing.Size(260, 20);
             this.endDateValue.TabIndex = 80;
@@ -108,7 +108,7 @@ namespace DevinMinaC868.Appt
             // cancelButton
             // 
             this.cancelButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cancelButton.Location = new System.Drawing.Point(226, 352);
+            this.cancelButton.Location = new System.Drawing.Point(723, 304);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 23);
             this.cancelButton.TabIndex = 79;
@@ -118,7 +118,7 @@ namespace DevinMinaC868.Appt
             // updateButton
             // 
             this.updateButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.updateButton.Location = new System.Drawing.Point(114, 352);
+            this.updateButton.Location = new System.Drawing.Point(19, 299);
             this.updateButton.Name = "updateButton";
             this.updateButton.Size = new System.Drawing.Size(75, 23);
             this.updateButton.TabIndex = 78;
@@ -137,7 +137,7 @@ namespace DevinMinaC868.Appt
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(16, 310);
+            this.label8.Location = new System.Drawing.Point(423, 126);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(52, 13);
             this.label8.TabIndex = 76;
@@ -146,7 +146,7 @@ namespace DevinMinaC868.Appt
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(16, 284);
+            this.label7.Location = new System.Drawing.Point(423, 100);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(55, 13);
             this.label7.TabIndex = 75;
@@ -155,7 +155,7 @@ namespace DevinMinaC868.Appt
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(16, 257);
+            this.label6.Location = new System.Drawing.Point(16, 127);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(31, 13);
             this.label6.TabIndex = 74;
@@ -164,7 +164,7 @@ namespace DevinMinaC868.Appt
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(16, 230);
+            this.label5.Location = new System.Drawing.Point(16, 100);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(44, 13);
             this.label5.TabIndex = 73;
@@ -173,7 +173,7 @@ namespace DevinMinaC868.Appt
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(16, 203);
+            this.label4.Location = new System.Drawing.Point(16, 73);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(48, 13);
             this.label4.TabIndex = 72;
@@ -182,7 +182,7 @@ namespace DevinMinaC868.Appt
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(16, 124);
+            this.label3.Location = new System.Drawing.Point(16, 166);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 13);
             this.label3.TabIndex = 71;
@@ -191,7 +191,7 @@ namespace DevinMinaC868.Appt
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(16, 98);
+            this.label2.Location = new System.Drawing.Point(423, 72);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(97, 13);
             this.label2.TabIndex = 70;
@@ -199,29 +199,29 @@ namespace DevinMinaC868.Appt
             // 
             // contactText
             // 
-            this.contactText.Location = new System.Drawing.Point(131, 230);
+            this.contactText.Location = new System.Drawing.Point(131, 100);
             this.contactText.Name = "contactText";
             this.contactText.Size = new System.Drawing.Size(260, 20);
             this.contactText.TabIndex = 69;
             // 
             // locationText
             // 
-            this.locationText.Location = new System.Drawing.Point(131, 203);
+            this.locationText.Location = new System.Drawing.Point(131, 73);
             this.locationText.Name = "locationText";
             this.locationText.Size = new System.Drawing.Size(260, 20);
             this.locationText.TabIndex = 68;
             // 
             // descriptionText
             // 
-            this.descriptionText.Location = new System.Drawing.Point(131, 121);
+            this.descriptionText.Location = new System.Drawing.Point(131, 163);
             this.descriptionText.Multiline = true;
             this.descriptionText.Name = "descriptionText";
-            this.descriptionText.Size = new System.Drawing.Size(260, 76);
+            this.descriptionText.Size = new System.Drawing.Size(667, 112);
             this.descriptionText.TabIndex = 67;
             // 
             // appointmentText
             // 
-            this.appointmentText.Location = new System.Drawing.Point(131, 98);
+            this.appointmentText.Location = new System.Drawing.Point(538, 72);
             this.appointmentText.Name = "appointmentText";
             this.appointmentText.Size = new System.Drawing.Size(260, 20);
             this.appointmentText.TabIndex = 66;
@@ -248,7 +248,7 @@ namespace DevinMinaC868.Appt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(404, 395);
+            this.ClientSize = new System.Drawing.Size(818, 339);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.appointmentComboBox);
             this.Controls.Add(this.typeComboBox);

@@ -55,7 +55,7 @@ namespace DevinMinaC868.User
             // cancelButton
             // 
             this.cancelButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cancelButton.Location = new System.Drawing.Point(104, 160);
+            this.cancelButton.Location = new System.Drawing.Point(245, 160);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 23);
             this.cancelButton.TabIndex = 46;
@@ -101,7 +101,7 @@ namespace DevinMinaC868.User
             this.password2.Location = new System.Drawing.Point(124, 104);
             this.password2.Name = "password2";
             this.password2.PasswordChar = '*';
-            this.password2.Size = new System.Drawing.Size(100, 20);
+            this.password2.Size = new System.Drawing.Size(154, 20);
             this.password2.TabIndex = 42;
             // 
             // password
@@ -109,14 +109,14 @@ namespace DevinMinaC868.User
             this.password.Location = new System.Drawing.Point(124, 74);
             this.password.Name = "password";
             this.password.PasswordChar = '*';
-            this.password.Size = new System.Drawing.Size(100, 20);
+            this.password.Size = new System.Drawing.Size(154, 20);
             this.password.TabIndex = 41;
             // 
             // userNameText
             // 
             this.userNameText.Location = new System.Drawing.Point(124, 46);
             this.userNameText.Name = "userNameText";
-            this.userNameText.Size = new System.Drawing.Size(100, 20);
+            this.userNameText.Size = new System.Drawing.Size(154, 20);
             this.userNameText.TabIndex = 40;
             this.userNameText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.userNameText_KeyPress);
             // 
@@ -160,7 +160,7 @@ namespace DevinMinaC868.User
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(233, 197);
+            this.ClientSize = new System.Drawing.Size(332, 197);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.button1);

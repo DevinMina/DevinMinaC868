@@ -58,7 +58,7 @@ namespace DevinMinaC868.User
             // cancelButton
             // 
             this.cancelButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cancelButton.Location = new System.Drawing.Point(155, 104);
+            this.cancelButton.Location = new System.Drawing.Point(249, 145);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 23);
             this.cancelButton.TabIndex = 64;
@@ -69,7 +69,7 @@ namespace DevinMinaC868.User
             // deleteButton
             // 
             this.deleteButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.deleteButton.Location = new System.Drawing.Point(22, 104);
+            this.deleteButton.Location = new System.Drawing.Point(15, 145);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(75, 23);
             this.deleteButton.TabIndex = 63;
@@ -80,7 +80,7 @@ namespace DevinMinaC868.User
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 77);
+            this.label1.Location = new System.Drawing.Point(32, 94);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(62, 13);
             this.label1.TabIndex = 62;
@@ -89,9 +89,9 @@ namespace DevinMinaC868.User
             // deleteComboBox
             // 
             this.deleteComboBox.FormattingEnabled = true;
-            this.deleteComboBox.Location = new System.Drawing.Point(109, 77);
+            this.deleteComboBox.Location = new System.Drawing.Point(122, 94);
             this.deleteComboBox.Name = "deleteComboBox";
-            this.deleteComboBox.Size = new System.Drawing.Size(121, 21);
+            this.deleteComboBox.Size = new System.Drawing.Size(154, 21);
             this.deleteComboBox.TabIndex = 61;
             this.deleteComboBox.Text = "--Select--";
             this.deleteComboBox.SelectedValueChanged += new System.EventHandler(this.deleteComboBox_SelectedValueChanged);
@@ -100,7 +100,7 @@ namespace DevinMinaC868.User
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(245, 136);
+            this.ClientSize = new System.Drawing.Size(336, 180);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.cancelButton);

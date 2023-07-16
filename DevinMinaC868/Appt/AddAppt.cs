@@ -17,7 +17,7 @@ namespace DevinMinaC868
         public AddAppt()
         {
             InitializeComponent();
-            populateCustomerList();
+            popCustomerList();
             comboBoxDefaultSettings();
             endDateValue.Value = endDateValue.Value.AddHours(1);
         }
@@ -34,7 +34,7 @@ namespace DevinMinaC868
             createButton.Enabled = false;
         }
 
-        public void populateCustomerList()
+        public void popCustomerList()
         {
             MySqlConnection connection = new MySqlConnection(dbHelp.getConnectionString());
 
@@ -52,7 +52,7 @@ namespace DevinMinaC868
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error occured! " + ex);
+                MessageBox.Show("Error occured!" + ex);
             }
         }
 

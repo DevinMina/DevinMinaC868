@@ -61,7 +61,7 @@ namespace DevinMinaC868
             // cancelButton
             // 
             this.cancelButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cancelButton.Location = new System.Drawing.Point(127, 236);
+            this.cancelButton.Location = new System.Drawing.Point(238, 256);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 23);
             this.cancelButton.TabIndex = 34;
@@ -72,7 +72,7 @@ namespace DevinMinaC868
             // addCustomerButton
             // 
             this.addCustomerButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.addCustomerButton.Location = new System.Drawing.Point(41, 236);
+            this.addCustomerButton.Location = new System.Drawing.Point(43, 256);
             this.addCustomerButton.Name = "addCustomerButton";
             this.addCustomerButton.Size = new System.Drawing.Size(75, 23);
             this.addCustomerButton.TabIndex = 33;
@@ -83,7 +83,7 @@ namespace DevinMinaC868
             // noRadio
             // 
             this.noRadio.AutoSize = true;
-            this.noRadio.Location = new System.Drawing.Point(150, 213);
+            this.noRadio.Location = new System.Drawing.Point(153, 223);
             this.noRadio.Name = "noRadio";
             this.noRadio.Size = new System.Drawing.Size(39, 17);
             this.noRadio.TabIndex = 32;
@@ -94,7 +94,7 @@ namespace DevinMinaC868
             // yesRadio
             // 
             this.yesRadio.AutoSize = true;
-            this.yesRadio.Location = new System.Drawing.Point(99, 213);
+            this.yesRadio.Location = new System.Drawing.Point(102, 223);
             this.yesRadio.Name = "yesRadio";
             this.yesRadio.Size = new System.Drawing.Size(43, 17);
             this.yesRadio.TabIndex = 31;
@@ -104,7 +104,7 @@ namespace DevinMinaC868
             // 
             // countryText
             // 
-            this.countryText.Location = new System.Drawing.Point(102, 183);
+            this.countryText.Location = new System.Drawing.Point(103, 184);
             this.countryText.Name = "countryText";
             this.countryText.Size = new System.Drawing.Size(100, 20);
             this.countryText.TabIndex = 30;
@@ -112,7 +112,7 @@ namespace DevinMinaC868
             // 
             // zipText
             // 
-            this.zipText.Location = new System.Drawing.Point(102, 153);
+            this.zipText.Location = new System.Drawing.Point(103, 154);
             this.zipText.Name = "zipText";
             this.zipText.Size = new System.Drawing.Size(100, 20);
             this.zipText.TabIndex = 29;
@@ -120,7 +120,7 @@ namespace DevinMinaC868
             // 
             // cityText
             // 
-            this.cityText.Location = new System.Drawing.Point(102, 125);
+            this.cityText.Location = new System.Drawing.Point(103, 126);
             this.cityText.Name = "cityText";
             this.cityText.Size = new System.Drawing.Size(100, 20);
             this.cityText.TabIndex = 28;
@@ -130,15 +130,14 @@ namespace DevinMinaC868
             // 
             this.addressText.Location = new System.Drawing.Point(102, 99);
             this.addressText.Name = "addressText";
-            this.addressText.Size = new System.Drawing.Size(100, 20);
+            this.addressText.Size = new System.Drawing.Size(211, 20);
             this.addressText.TabIndex = 27;
-            this.addressText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.AddressText_KeyPress);
             // 
             // phoneText
             // 
             this.phoneText.Location = new System.Drawing.Point(102, 69);
             this.phoneText.Name = "phoneText";
-            this.phoneText.Size = new System.Drawing.Size(100, 20);
+            this.phoneText.Size = new System.Drawing.Size(211, 20);
             this.phoneText.TabIndex = 26;
             this.phoneText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PhoneText_KeyPress);
             // 
@@ -146,14 +145,14 @@ namespace DevinMinaC868
             // 
             this.nameText.Location = new System.Drawing.Point(102, 41);
             this.nameText.Name = "nameText";
-            this.nameText.Size = new System.Drawing.Size(100, 20);
+            this.nameText.Size = new System.Drawing.Size(211, 20);
             this.nameText.TabIndex = 25;
             this.nameText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NameText_KeyPress);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(41, 183);
+            this.label7.Location = new System.Drawing.Point(42, 184);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(43, 13);
             this.label7.TabIndex = 24;
@@ -162,7 +161,7 @@ namespace DevinMinaC868
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(41, 153);
+            this.label6.Location = new System.Drawing.Point(42, 154);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(50, 13);
             this.label6.TabIndex = 23;
@@ -171,7 +170,7 @@ namespace DevinMinaC868
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(41, 125);
+            this.label5.Location = new System.Drawing.Point(42, 126);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(24, 13);
             this.label5.TabIndex = 22;
@@ -207,7 +206,7 @@ namespace DevinMinaC868
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(41, 213);
+            this.label1.Location = new System.Drawing.Point(44, 223);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(37, 13);
             this.label1.TabIndex = 18;
@@ -217,7 +216,7 @@ namespace DevinMinaC868
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(243, 283);
+            this.ClientSize = new System.Drawing.Size(333, 302);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.addCustomerButton);
