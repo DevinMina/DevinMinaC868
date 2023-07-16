@@ -708,11 +708,11 @@ namespace DevinMinaC868
             MySqlConnection conn = new MySqlConnection(connectionString);
             conn.Open();
             var query = "SELECT DISTINCT " +
-                $" (select count(type) from appointment where type = 'Cleaning') as 'Cleaning'," +
-                $" (select count(type) from appointment where type = 'Cavities') as 'Cavities'," +
-                $" (select count(type) from appointment where type = 'Wisdom Teeth') as 'Wisdom Teeth'," +
+                $" (select count(type) from appointment where type = 'Accounts Payable') as 'Accounts Payable'," +
+                $" (select count(type) from appointment where type = 'Accounts Receivable') as 'Accounts Receivable'," +
+                $" (select count(type) from appointment where type = 'Payroll Processing') as 'Payroll Processing'," +
                 $" (select count(type) from appointment where type = 'Consultation') as 'Consultation'," +
-                $" (select count(type) from appointment where type = 'Root Canal') as 'Root Canal'," +
+                $" (select count(type) from appointment where type = 'Auditing') as 'Auditing'," +
                 $" (select count(type) from appointment where type = 'Other') as 'Other'" +
                 $" from appointment";
             MySqlCommand cmd = new MySqlCommand(query, conn);
@@ -720,11 +720,11 @@ namespace DevinMinaC868
             if (reader.HasRows)
             {
                 reader.Read();
-                report.Add("cleaning", reader[0]);
-                report.Add("cavities", reader[1]);
-                report.Add("wisdomTeeth", reader[2]);
+                report.Add("accounts_payable", reader[0]);
+                report.Add("accounts_receivable", reader[1]);
+                report.Add("payroll_processing", reader[2]);
                 report.Add("consultation", reader[3]);
-                report.Add("rootCanals", reader[4]);
+                report.Add("auditing", reader[4]);
                 report.Add("other", reader[5]);
             }
             return report;

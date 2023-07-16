@@ -251,7 +251,7 @@ namespace DevinMinaC868
             this.Hide();
         }
 
-        private void AppointmentCountByType_Click(object sender, EventArgs e)
+        private void ApptCountByType_Click(object sender, EventArgs e)
         {
             Form apptCountByType = new ApptCountByType();
             apptCountByType.Owner = this;
