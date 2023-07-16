@@ -48,7 +48,7 @@ namespace DevinMinaC868
             this.phoneText = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.modifyComboBox = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.nameText = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // cancelButton
@@ -234,13 +234,13 @@ namespace DevinMinaC868
             this.modifyComboBox.Text = "--Select--";
             this.modifyComboBox.SelectedValueChanged += new System.EventHandler(this.EditComboBox_SelectedValueChanged);
             // 
-            // textBox1
+            // nameText
             // 
-            this.textBox1.Location = new System.Drawing.Point(130, 77);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(211, 20);
-            this.textBox1.TabIndex = 22;
-            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NameText_KeyPress);
+            this.nameText.Location = new System.Drawing.Point(130, 77);
+            this.nameText.Name = "nameText";
+            this.nameText.Size = new System.Drawing.Size(211, 20);
+            this.nameText.TabIndex = 22;
+            this.nameText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NameText_KeyPress);
             // 
             // EditCustomer
             // 
@@ -264,7 +264,7 @@ namespace DevinMinaC868
             this.Controls.Add(this.cityText);
             this.Controls.Add(this.addressText);
             this.Controls.Add(this.phoneText);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.nameText);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.modifyComboBox);
             this.Name = "EditCustomer";
@@ -295,6 +295,6 @@ namespace DevinMinaC868
         private System.Windows.Forms.TextBox phoneText;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox modifyComboBox;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox nameText;
     }
 }
