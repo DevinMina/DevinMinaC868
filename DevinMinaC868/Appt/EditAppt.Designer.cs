@@ -50,6 +50,7 @@ namespace DevinMinaC868.Appt
             this.appointmentText = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.customerComboBox = new System.Windows.Forms.ComboBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label10
@@ -71,6 +72,7 @@ namespace DevinMinaC868.Appt
             this.appointmentComboBox.Size = new System.Drawing.Size(345, 24);
             this.appointmentComboBox.TabIndex = 83;
             this.appointmentComboBox.Text = "--Select--";
+            this.appointmentComboBox.SelectedValueChanged += new System.EventHandler(this.AppointmentComboBox_SelectedValueChanged);
             // 
             // typeComboBox
             // 
@@ -132,6 +134,7 @@ namespace DevinMinaC868.Appt
             this.updateButton.TabIndex = 78;
             this.updateButton.Text = "Update";
             this.updateButton.UseVisualStyleBackColor = false;
+            this.updateButton.Click += new System.EventHandler(this.UpdateButton_Click);
             // 
             // label9
             // 
@@ -265,12 +268,24 @@ namespace DevinMinaC868.Appt
             this.customerComboBox.Size = new System.Drawing.Size(345, 24);
             this.customerComboBox.TabIndex = 64;
             this.customerComboBox.Text = "--Select--";
+            this.customerComboBox.SelectedValueChanged += new System.EventHandler(this.CustomerComboBox_SelectedValueChanged);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(660, 0);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(95, 20);
+            this.checkBox1.TabIndex = 85;
+            this.checkBox1.Text = "checkBox1";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // EditAppt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1091, 417);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.appointmentComboBox);
             this.Controls.Add(this.typeComboBox);
@@ -323,5 +338,6 @@ namespace DevinMinaC868.Appt
         private System.Windows.Forms.TextBox appointmentText;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox customerComboBox;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
