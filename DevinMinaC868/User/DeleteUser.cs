@@ -13,6 +13,7 @@ namespace DevinMinaC868.User
 {
     public partial class DeleteUser : Form
     {
+
         public static List<KeyValuePair<string, object>> UserList;
         public void setUserList(List<KeyValuePair<string, object>> list)
         {
