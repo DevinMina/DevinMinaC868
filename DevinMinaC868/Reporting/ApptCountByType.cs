@@ -16,9 +16,9 @@ namespace DevinMinaC868.Reporting
         {
             InitializeComponent();
             IDictionary<string, object> dictionary = dbHelp.apptCountByType();
-            accountsPayable.Text = dictionary["accountsPayable"].ToString();
-            accountsReceivable.Text = dictionary["accountsReceivable"].ToString();
-            payrollProcessing.Text = dictionary["payrollProcessing"].ToString();
+            accountsPayable.Text = dictionary["accounts_payable"].ToString();
+            accountsReceivable.Text = dictionary["accounts_receivable"].ToString();
+            payrollProcessing.Text = dictionary["payroll_processing"].ToString();
             consultations.Text = dictionary["consultation"].ToString();
             auditing.Text = dictionary["auditing"].ToString();
             other.Text = dictionary["other"].ToString();
