@@ -55,10 +55,12 @@ namespace DevinMinaC868
             this.deleteCustomerButton = new System.Windows.Forms.Button();
             this.modifyCustomerButton = new System.Windows.Forms.Button();
             this.searchBox = new System.Windows.Forms.TextBox();
+            this.dgv_customers = new System.Windows.Forms.DataGridView();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.appointmentCalendar)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_customers)).BeginInit();
             this.SuspendLayout();
             // 
             // appointmentsByConsultant
@@ -349,13 +351,21 @@ namespace DevinMinaC868
             this.searchBox.Size = new System.Drawing.Size(177, 20);
             this.searchBox.TabIndex = 25;
             this.searchBox.Text = "Search Box";
-            this.searchBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // dgv_customers
+            // 
+            this.dgv_customers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_customers.Location = new System.Drawing.Point(161, 628);
+            this.dgv_customers.Name = "dgv_customers";
+            this.dgv_customers.Size = new System.Drawing.Size(698, 150);
+            this.dgv_customers.TabIndex = 26;
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1061, 679);
+            this.ClientSize = new System.Drawing.Size(1061, 1005);
+            this.Controls.Add(this.dgv_customers);
             this.Controls.Add(this.searchBox);
             this.Controls.Add(this.appointmentsByConsultant);
             this.Controls.Add(this.appointmentsByCustomer);
@@ -379,6 +389,7 @@ namespace DevinMinaC868
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_customers)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -412,5 +423,6 @@ namespace DevinMinaC868
         private System.Windows.Forms.Button deleteCustomerButton;
         private System.Windows.Forms.Button modifyCustomerButton;
         private System.Windows.Forms.TextBox searchBox;
+        private System.Windows.Forms.DataGridView dgv_customers;
     }
 }

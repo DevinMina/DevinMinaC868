@@ -2,6 +2,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Windows.Forms;
 using DevinMinaC868.Appt;
@@ -12,6 +13,7 @@ namespace DevinMinaC868
 {
     public partial class Menu : Form
     {
+        private DataTable customer_dt;
         public Menu()
         {
             InitializeComponent();
@@ -237,9 +239,17 @@ namespace DevinMinaC868
             this.Hide();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        public void update_customers()
         {
+            string query = "SELECT * FROM CUSTOMER";
+            MySqlConnection conn = new MySqlConnection(dbHelp.connectionString);
+            conn.Open();
+            MySqlCommand cmd = new MySqlCommand(query, conn);
 
+            customer_dt = new DataTable("customers");
+            customer_dt.Load(cmd.ExecuteReader());
+
+            dgv_customers.DataSource = customer_dt;
         }
     }
 }
