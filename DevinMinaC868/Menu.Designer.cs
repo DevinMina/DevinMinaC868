@@ -344,7 +344,7 @@ namespace DevinMinaC868
             // 
             // searchBox
             // 
-            this.searchBox.Location = new System.Drawing.Point(270, 106);
+            this.searchBox.Location = new System.Drawing.Point(287, 106);
             this.searchBox.Name = "searchBox";
             this.searchBox.Size = new System.Drawing.Size(177, 20);
             this.searchBox.TabIndex = 25;
