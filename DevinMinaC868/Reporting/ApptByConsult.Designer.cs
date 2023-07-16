@@ -72,6 +72,7 @@ namespace DevinMinaC868.Reporting
             this.userComboBox.Name = "userComboBox";
             this.userComboBox.Size = new System.Drawing.Size(290, 21);
             this.userComboBox.TabIndex = 130;
+            this.userComboBox.SelectedValueChanged += new System.EventHandler(this.UserComboBox_SelectedValueChanged);
             // 
             // dataGridView1
             // 
