@@ -48,7 +48,7 @@ namespace DevinMinaC868.Reporting
             if (userComboBox.SelectedIndex != -1)
             {
                 int id = Convert.ToInt32(userComboBox.SelectedValue);
-                DataTable dataTableRecord = dbHelp.getAppointmentListByUser(id.ToString());
+                DataTable dataTableRecord = dbHelp.getApptListByUser(id.ToString());
                 dataGridView1.DataSource = dataTableRecord;
                 dataGridView1.Visible = true;
             }

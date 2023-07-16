@@ -169,7 +169,7 @@ namespace DevinMinaC868
             }
 
             //what we display to the user in the calendar view
-            dbHelp.setAppointments(appointments);
+            dbHelp.setAppts(appointments);
             var apptArray = from row in parsedAppointments
                             select new
                             {

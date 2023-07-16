@@ -23,7 +23,7 @@ namespace DevinMinaC868
         {
             try
             {
-                var list = dbHelp.getNextAppointment();
+                var list = dbHelp.getNextAppt();
                 IDictionary<string, object> dictionary = list.ToDictionary(pair => pair.Key, pair => pair.Value);
                 DateTime? currentTime = getTime();
                 string type = dictionary["type"].ToString();

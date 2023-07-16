@@ -110,7 +110,7 @@ namespace DevinMinaC868.Appt
         {
             DataRowView dataRowView = appointmentComboBox.SelectedItem as DataRowView;
             int id = Convert.ToInt32(appointmentComboBox.SelectedValue);
-            var apptList = dbHelp.getAppointmentList(id);
+            var apptList = dbHelp.getApptList(id);
             setAppointList(apptList);
 
             if (appointmentComboBox.SelectedIndex != -1)
@@ -174,7 +174,7 @@ namespace DevinMinaC868.Appt
                                 dictionary["start"] = startDateValue.Value;
                                 dictionary["end"] = endDateValue.Value;
                                 dictionary["url"] = customerComboBox.SelectedValue;
-                                dbHelp.updateAppointment(dictionary);
+                                dbHelp.updateAppt(dictionary);
                                 MessageBox.Show("Customer appointment successfully updated!");
                                 this.Owner.Show();
                                 this.Close();
@@ -236,7 +236,7 @@ namespace DevinMinaC868.Appt
             {
                 return 1;
             }
-            if (dbHelp.appointmentOverlaps(start, end) == true)
+            if (dbHelp.apptOverlaps(start, end) == true)
             {
                 return 2;
             }

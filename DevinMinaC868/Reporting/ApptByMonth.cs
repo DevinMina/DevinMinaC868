@@ -21,7 +21,7 @@ namespace DevinMinaC868.Reporting
         private void TypeComboBox_SelectedValueChanged(object sender, EventArgs e)
         {
             string type = typeComboBox.SelectedItem.ToString();
-            IDictionary<string, object> dictionary = dbHelp.appointmentByTypeMonth(type);
+            IDictionary<string, object> dictionary = dbHelp.apptsByMonth(type);
             jan.Text = dictionary["Jan"].ToString();
             feb.Text = dictionary["Feb"].ToString();
             mar.Text = dictionary["Mar"].ToString();

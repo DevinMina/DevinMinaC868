@@ -121,7 +121,7 @@ namespace DevinMinaC868.Appt
         {
             DataRowView dataRowView = appointmentComboBox.SelectedItem as DataRowView;
             int id = Convert.ToInt32(appointmentComboBox.SelectedValue);
-            var apptList = dbHelp.getAppointmentList(id);
+            var apptList = dbHelp.getApptList(id);
             setAppointList(apptList);
 
             if (appointmentComboBox.SelectedIndex != -1)
@@ -149,7 +149,7 @@ namespace DevinMinaC868.Appt
 
                     //lambda expression to convert list to dictionary
                     IDictionary<string, object> dictionary = list.ToDictionary(pair => pair.Key, pair => pair.Value);
-                    dbHelp.deleteAppointment(dictionary);
+                    dbHelp.deleteAppt(dictionary);
                     MessageBox.Show("Appointment successfully deleted.");
                     //refresh appointment list
                     populateAppointmentList();

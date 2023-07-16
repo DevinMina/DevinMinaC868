@@ -73,7 +73,7 @@ namespace DevinMinaC868
             {
                 return 1;
             }
-            if (dbHelp.appointmentOverlaps(start, end) == true)
+            if (dbHelp.apptOverlaps(start, end) == true)
             {
                 return 2;
             }
@@ -106,7 +106,7 @@ namespace DevinMinaC868
                     switch (available)
                     {
                         case 0:
-                            dbHelp.createAppointment(custID, appointmentText.Text, descriptionText.Text, locationText.Text, contactText.Text, typeComboBox.SelectedItem.ToString(), start, end);
+                            dbHelp.createAppt(custID, appointmentText.Text, descriptionText.Text, locationText.Text, contactText.Text, typeComboBox.SelectedItem.ToString(), start, end);
                             MessageBox.Show("Appointment successfully created.");
                             this.Owner.Show();
                             this.Close();

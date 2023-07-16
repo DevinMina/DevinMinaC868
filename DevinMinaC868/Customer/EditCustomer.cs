@@ -97,7 +97,7 @@ namespace DevinMinaC868
         {
             DataRowView dataRowView = modifyComboBox.SelectedItem as DataRowView;
             int id = Convert.ToInt32(modifyComboBox.SelectedValue);
-            var customerList = dbHelp.findCustomer(id);
+            var customerList = dbHelp.searchCustomer(id);
             setCustomerList(customerList);
             if (customerList != null)
             {

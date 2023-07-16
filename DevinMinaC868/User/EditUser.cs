@@ -76,7 +76,7 @@ namespace DevinMinaC868.User
         {
             DataRowView dataRowView = modifyComboBox.SelectedItem as DataRowView;
             int id = Convert.ToInt32(modifyComboBox.SelectedValue);
-            var userList = dbHelp.findUser(id);
+            var userList = dbHelp.searchUser(id);
             setUserList(userList);
             if (userList != null)
             {

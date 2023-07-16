@@ -75,7 +75,7 @@ namespace DevinMinaC868
         {
             DataRowView dataRowView = deleteComboBox.SelectedItem as DataRowView;
             int id = Convert.ToInt32(deleteComboBox.SelectedValue);
-            var customerList = dbHelp.findCustomer(id);
+            var customerList = dbHelp.searchCustomer(id);
             setCustList(customerList);
             if (customerList != null)
             {
@@ -163,7 +163,7 @@ namespace DevinMinaC868
                 {
                     var list = getCustList();
                     IDictionary<string, object> dictionary = list.ToDictionary(pair => pair.Key, pair => pair.Value);
-                    bool appts = dbHelp.checkAppointments(dictionary["customerId"].ToString());
+                    bool appts = dbHelp.checkAppts(dictionary["customerId"].ToString());
                     if (appts == false)
                     {
                         dbHelp.deleteCustomer(dictionary);
@@ -173,7 +173,7 @@ namespace DevinMinaC868
                         DialogResult confirm2 = MessageBox.Show("Deleting this customer will also remove all associated appointments, are you sure?", "", MessageBoxButtons.YesNo);
                         if (confirm2 == DialogResult.Yes)
                         {
-                            dbHelp.deleteCustAppointments(dictionary["customerId"].ToString());
+                            dbHelp.deleteCustAppts(dictionary["customerId"].ToString());
                             dbHelp.deleteCustomer(dictionary);
                         }
                         else
