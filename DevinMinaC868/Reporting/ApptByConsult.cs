@@ -20,7 +20,7 @@ namespace DevinMinaC868.Reporting
             userComboBox.SelectedItem = null;
             dataGridView1.Visible = false;
             userComboBox.Text = "--Select--";
-            label2.Text = DateTime.Now.ToString();
+            date.Text = DateTime.Now.ToString();
         }
         public void populateUserList()
         {

@@ -16,13 +16,13 @@ namespace DevinMinaC868.Reporting
         {
             InitializeComponent();
             IDictionary<string, object> dictionary = dbHelp.appointmentByTypeCount();
-            cleanings.Text = dictionary["cleaning"].ToString();
-            cavities.Text = dictionary["cavities"].ToString();
-            wisdomTeeth.Text = dictionary["wisdomTeeth"].ToString();
+            accounts_payable.Text = dictionary["accounts_payable"].ToString();
+            accounts_receivable.Text = dictionary["accounts_receivable"].ToString();
+            payroll_processing.Text = dictionary["payroll_processing"].ToString();
             consultations.Text = dictionary["consultation"].ToString();
-            rootCanals.Text = dictionary["rootCanals"].ToString();
+            auditing.Text = dictionary["auditing"].ToString();
             other.Text = dictionary["other"].ToString();
-            label1.Text = DateTime.Now.ToString();
+            date.Text = DateTime.Now.ToString();
         }
 
         private void Cancel_Click(object sender, EventArgs e)
@@ -31,6 +31,9 @@ namespace DevinMinaC868.Reporting
             this.Close();
         }
 
+        private void ApptCountByType_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 }

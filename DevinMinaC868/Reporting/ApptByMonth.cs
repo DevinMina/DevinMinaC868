@@ -15,7 +15,7 @@ namespace DevinMinaC868.Reporting
         public ApptByMonth()
         {
             InitializeComponent();
-            label3.Text = DateTime.Now.ToString();
+            date.Text = DateTime.Now.ToString();
         }
 
         private void TypeComboBox_SelectedValueChanged(object sender, EventArgs e)
