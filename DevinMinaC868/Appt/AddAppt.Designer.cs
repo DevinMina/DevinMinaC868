@@ -94,6 +94,7 @@ namespace DevinMinaC868
             this.cancelButton.TabIndex = 58;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = false;
+            this.cancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 
             // createButton
             // 
@@ -104,6 +105,7 @@ namespace DevinMinaC868
             this.createButton.TabIndex = 57;
             this.createButton.Text = "Create";
             this.createButton.UseVisualStyleBackColor = false;
+            this.createButton.Click += new System.EventHandler(this.CreateButton_Click);
             // 
             // label9
             // 
@@ -223,6 +225,7 @@ namespace DevinMinaC868
             this.addApptComboBox.Size = new System.Drawing.Size(204, 21);
             this.addApptComboBox.TabIndex = 43;
             this.addApptComboBox.Text = "--Select--";
+            this.addApptComboBox.SelectedValueChanged += new System.EventHandler(this.AddApptComboBox_SelectedValueChanged);
             // 
             // AddAppt
             // 

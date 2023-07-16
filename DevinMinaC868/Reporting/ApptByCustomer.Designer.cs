@@ -55,6 +55,7 @@ namespace DevinMinaC868.Reporting
             this.button1.TabIndex = 132;
             this.button1.Text = "Cancel";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Cancel_Click);
             // 
             // label1
             // 
@@ -72,6 +73,7 @@ namespace DevinMinaC868.Reporting
             this.custComboBox.Name = "custComboBox";
             this.custComboBox.Size = new System.Drawing.Size(290, 21);
             this.custComboBox.TabIndex = 130;
+            this.custComboBox.SelectedValueChanged += new System.EventHandler(this.CustComboBox_SelectedValueChanged);
             // 
             // dataGridView1
             // 

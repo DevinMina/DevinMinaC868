@@ -16,16 +16,16 @@ namespace DevinMinaC868.Reporting
         {
             InitializeComponent();
             IDictionary<string, object> dictionary = dbHelp.appointmentByTypeCount();
-            cleanings.Text = dictionary["cleaning"].ToString();
-            cavities.Text = dictionary["cavities"].ToString();
-            wisdomTeeth.Text = dictionary["wisdomTeeth"].ToString();
-            consultations.Text = dictionary["consultation"].ToString();
-            rootCanals.Text = dictionary["rootCanals"].ToString();
-            other.Text = dictionary["other"].ToString();
+            cleanings.Text = dictionary["General Consultation"].ToString();
+            //cavities.Text = dictionary["cavities"].ToString();
+            //wisdomTeeth.Text = dictionary["wisdomTeeth"].ToString();
+            //consultations.Text = dictionary["consultation"].ToString();
+            //rootCanals.Text = dictionary["rootCanals"].ToString();
+            //other.Text = dictionary["other"].ToString();
             label1.Text = DateTime.Now.ToString();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Cancel_Click(object sender, EventArgs e)
         {
             this.Owner.Show();
             this.Close();

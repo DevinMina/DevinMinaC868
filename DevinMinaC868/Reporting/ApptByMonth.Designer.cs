@@ -78,6 +78,7 @@ namespace DevinMinaC868.Reporting
             this.button1.TabIndex = 156;
             this.button1.Text = "Cancel";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Cancel_Click);
             // 
             // aug
             // 
@@ -341,6 +342,7 @@ namespace DevinMinaC868.Reporting
             this.typeComboBox.Name = "typeComboBox";
             this.typeComboBox.Size = new System.Drawing.Size(143, 21);
             this.typeComboBox.TabIndex = 129;
+            this.typeComboBox.SelectedValueChanged += new System.EventHandler(this.TypeComboBox_SelectedValueChanged);
             // 
             // ApptByMonth
             // 

@@ -37,7 +37,7 @@ namespace DevinMinaC868.Reporting
 
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void Cancel_Click(object sender, EventArgs e)
         {
             this.Owner.Show();
             this.Close();
