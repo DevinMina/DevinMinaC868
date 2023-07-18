@@ -54,12 +54,12 @@ namespace DevinMinaC868
             // 
             this.typeComboBox.FormattingEnabled = true;
             this.typeComboBox.Items.AddRange(new object[] {
-            "Cleaning",
-            "Cavities",
-            "Wisdom Teeth",
+            "Accounts Payable",
+            "Accounts Receivable",
+            "Payroll Processing",
             "Consultation",
-            "Other",
-            "Root Canal"});
+            "Auditing",
+            "Other"});
             this.typeComboBox.Location = new System.Drawing.Point(136, 129);
             this.typeComboBox.Name = "typeComboBox";
             this.typeComboBox.Size = new System.Drawing.Size(204, 21);

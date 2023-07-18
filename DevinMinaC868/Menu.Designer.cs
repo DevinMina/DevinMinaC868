@@ -170,7 +170,7 @@ namespace DevinMinaC868
             this.button1.TabIndex = 13;
             this.button1.Text = "Appointment Count by Type";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.AppointmentCountByType_Click);
+            this.button1.Click += new System.EventHandler(this.ApptCountByType_Click);
             // 
             // refreshButton
             // 
