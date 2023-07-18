@@ -68,10 +68,10 @@ namespace DevinMinaC868.Appt
         public void populateAppointmentList()
         {
             MySqlConnection conn = new MySqlConnection(dbHelp.getConnectionString());
-            string utcOffset = (TimeZoneInfo.Local.GetUtcOffset(DateTime.UtcNow).ToString().Substring(0, 6));
+            string utcOffset = TimeZoneInfo.Local.GetUtcOffset(DateTime.UtcNow).ToString(@"hh\:mm");
             try
             {
-                string query = $"SELECT appointmentId, concat(type, ' --Time: ', DATE_FORMAT(CONVERT_TZ(start, '+00:00', '{utcOffset}'), '%M %D %Y %r')) as Display FROM appointment WHERE customerId = '{customerComboBox.SelectedValue}';";
+                string query = $"SELECT appointmentId, CONCAT(type, ' --Time: ', DATE_FORMAT(CONVERT_TZ(start, '+00:00', '+{utcOffset}'), '%M %D %Y %r')) AS Display FROM appointment WHERE customerId = '{customerComboBox.SelectedValue}';";
                 MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter(query, conn);
                 conn.Open();
                 DataSet dataSet = new DataSet();
@@ -79,11 +79,10 @@ namespace DevinMinaC868.Appt
                 appointmentComboBox.DisplayMember = "Display";
                 appointmentComboBox.ValueMember = "appointmentId";
                 appointmentComboBox.DataSource = dataSet.Tables["Appoint"];
-
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error occured! " + ex);
+                MessageBox.Show("Error occurred! " + ex);
             }
         }
 
