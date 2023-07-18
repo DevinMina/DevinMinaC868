@@ -69,6 +69,7 @@ namespace DevinMinaC868.Appt
             this.appointmentComboBox.Size = new System.Drawing.Size(260, 21);
             this.appointmentComboBox.TabIndex = 104;
             this.appointmentComboBox.Text = "--Select--";
+            this.appointmentComboBox.SelectedValueChanged += new System.EventHandler(this.AppointmentComboBox_SelectedValueChanged);
             // 
             // typeComboBox
             // 
@@ -114,6 +115,7 @@ namespace DevinMinaC868.Appt
             this.cancelButton.TabIndex = 100;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = false;
+            this.cancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 
             // deleteButton
             // 
@@ -124,6 +126,7 @@ namespace DevinMinaC868.Appt
             this.deleteButton.TabIndex = 99;
             this.deleteButton.Text = "Delete";
             this.deleteButton.UseVisualStyleBackColor = false;
+            this.deleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
             // 
             // label9
             // 
@@ -243,6 +246,7 @@ namespace DevinMinaC868.Appt
             this.customerComboBox.Size = new System.Drawing.Size(260, 21);
             this.customerComboBox.TabIndex = 85;
             this.customerComboBox.Text = "--Select--";
+            this.customerComboBox.SelectedValueChanged += new System.EventHandler(this.CustomerComboBox_SelectedValueChanged);
             // 
             // DeleteAppt
             // 
