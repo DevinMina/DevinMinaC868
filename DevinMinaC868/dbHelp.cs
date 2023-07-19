@@ -17,7 +17,7 @@ namespace DevinMinaC868
         private static string userName;
         
 
-        public static string connectionString = ConfigurationManager.ConnectionStrings["localdb"].ConnectionString;
+        public static string connectionString = ConfigurationManager.ConnectionStrings["myserver"].ConnectionString;
 
         public static string getConnectionString()
         {
