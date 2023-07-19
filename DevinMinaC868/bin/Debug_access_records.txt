@@ -41,3 +41,5 @@ Login time = 7/18/2023 4:27:21 AM, userName = test
 Login time = 7/18/2023 4:28:36 AM, userName = test
 Login time = 7/18/2023 4:29:52 AM, userName = test
 Login time = 7/18/2023 4:30:38 AM, userName = test
+Login time = 7/19/2023 7:32:51 PM, userName = test
+Logout time = 7/19/2023 7:32:53 PM, userName = test
