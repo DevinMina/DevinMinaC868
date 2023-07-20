@@ -95,7 +95,7 @@ namespace DevinMinaC868
             // 
             this.deleteUser.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.deleteUser.Cursor = System.Windows.Forms.Cursors.No;
-            this.deleteUser.Location = new System.Drawing.Point(601, 9);
+            this.deleteUser.Location = new System.Drawing.Point(622, 26);
             this.deleteUser.Name = "deleteUser";
             this.deleteUser.Size = new System.Drawing.Size(65, 37);
             this.deleteUser.TabIndex = 24;
@@ -223,9 +223,9 @@ namespace DevinMinaC868
             this.panel2.Controls.Add(this.deleteAppointmentButton);
             this.panel2.Controls.Add(this.modifyAppointmentButton);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(12, 181);
+            this.panel2.Location = new System.Drawing.Point(12, 199);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(165, 212);
+            this.panel2.Size = new System.Drawing.Size(165, 194);
             this.panel2.TabIndex = 14;
             // 
             // label4
@@ -242,7 +242,7 @@ namespace DevinMinaC868
             // 
             this.addAppointmentButton.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.addAppointmentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addAppointmentButton.Location = new System.Drawing.Point(13, 100);
+            this.addAppointmentButton.Location = new System.Drawing.Point(13, 55);
             this.addAppointmentButton.Name = "addAppointmentButton";
             this.addAppointmentButton.Size = new System.Drawing.Size(137, 32);
             this.addAppointmentButton.TabIndex = 4;
@@ -254,7 +254,7 @@ namespace DevinMinaC868
             // 
             this.deleteAppointmentButton.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.deleteAppointmentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deleteAppointmentButton.Location = new System.Drawing.Point(12, 171);
+            this.deleteAppointmentButton.Location = new System.Drawing.Point(12, 161);
             this.deleteAppointmentButton.Name = "deleteAppointmentButton";
             this.deleteAppointmentButton.Size = new System.Drawing.Size(142, 25);
             this.deleteAppointmentButton.TabIndex = 6;
@@ -266,7 +266,7 @@ namespace DevinMinaC868
             // 
             this.modifyAppointmentButton.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.modifyAppointmentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.modifyAppointmentButton.Location = new System.Drawing.Point(12, 57);
+            this.modifyAppointmentButton.Location = new System.Drawing.Point(12, 104);
             this.modifyAppointmentButton.Name = "modifyAppointmentButton";
             this.modifyAppointmentButton.Size = new System.Drawing.Size(137, 32);
             this.modifyAppointmentButton.TabIndex = 5;
@@ -306,7 +306,6 @@ namespace DevinMinaC868
             this.deleteCustomerButton.TabIndex = 2;
             this.deleteCustomerButton.Text = "Delete Customer";
             this.deleteCustomerButton.UseVisualStyleBackColor = false;
-            this.deleteCustomerButton.Visible = false;
             this.deleteCustomerButton.Click += new System.EventHandler(this.DeleteCustomerButton_Click);
             // 
             // modifyCustomerButton
