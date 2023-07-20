@@ -32,7 +32,7 @@ namespace DevinMinaC868
                     where row[1].ToString().ToLower().Contains(search)
                     select row;
 
-                dgv_customers.DataSource = re.CopyToDataTable();
+                customersList.DataSource = re.CopyToDataTable();
             }
             catch (Exception ex)
             {
@@ -44,6 +44,7 @@ namespace DevinMinaC868
         {
             appointmentCalendar.DataSource = displayCalendar(weekRadio.Checked);
         }
+
 
         private void AddCustomerButton_Click(object sender, EventArgs e)
         {
@@ -268,19 +269,12 @@ namespace DevinMinaC868
             customer_dt = new DataTable("customers");
             customer_dt.Load(cmd.ExecuteReader());
 
-            dgv_customers.DataSource = customer_dt;
+            customersList.DataSource = customer_dt;
         }
 
-
-        //SearchBox Enter/Leave 
-        private void searchBox_Enter(object sender, EventArgs e)
+        private void refreshCustomers_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void searchBox_Leave(object sender, EventArgs e)
-        {
-
+            update_customers();
         }
     }
 }

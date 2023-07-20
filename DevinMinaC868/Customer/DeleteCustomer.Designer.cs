@@ -63,11 +63,11 @@ namespace DevinMinaC868
             // cancelButton
             // 
             this.cancelButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cancelButton.Location = new System.Drawing.Point(271, 291);
+            this.cancelButton.Location = new System.Drawing.Point(265, 291);
             this.cancelButton.Name = "cancelButton";
-            this.cancelButton.Size = new System.Drawing.Size(75, 23);
+            this.cancelButton.Size = new System.Drawing.Size(81, 23);
             this.cancelButton.TabIndex = 58;
-            this.cancelButton.Text = "Cancel";
+            this.cancelButton.Text = "Cancel/Done";
             this.cancelButton.UseVisualStyleBackColor = false;
             this.cancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 

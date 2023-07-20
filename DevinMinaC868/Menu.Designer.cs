@@ -51,7 +51,7 @@ namespace DevinMinaC868
             this.deleteCustomerButton = new System.Windows.Forms.Button();
             this.modifyCustomerButton = new System.Windows.Forms.Button();
             this.searchBox = new System.Windows.Forms.TextBox();
-            this.dgv_customers = new System.Windows.Forms.DataGridView();
+            this.customersList = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -59,10 +59,11 @@ namespace DevinMinaC868
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.refreshCustomers = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.appointmentCalendar)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_customers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customersList)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -305,6 +306,7 @@ namespace DevinMinaC868
             this.deleteCustomerButton.TabIndex = 2;
             this.deleteCustomerButton.Text = "Delete Customer";
             this.deleteCustomerButton.UseVisualStyleBackColor = false;
+            this.deleteCustomerButton.Visible = false;
             this.deleteCustomerButton.Click += new System.EventHandler(this.DeleteCustomerButton_Click);
             // 
             // modifyCustomerButton
@@ -329,13 +331,16 @@ namespace DevinMinaC868
             this.searchBox.Text = "Search Customer Name";
             this.searchBox.TextChanged += new System.EventHandler(this.txtBox_search_TextChanged);
             // 
-            // dgv_customers
+            // customersList
             // 
-            this.dgv_customers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_customers.Location = new System.Drawing.Point(10, 483);
-            this.dgv_customers.Name = "dgv_customers";
-            this.dgv_customers.Size = new System.Drawing.Size(847, 176);
-            this.dgv_customers.TabIndex = 26;
+            this.customersList.AllowUserToOrderColumns = true;
+            this.customersList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.customersList.Location = new System.Drawing.Point(10, 483);
+            this.customersList.Name = "customersList";
+            this.customersList.ReadOnly = true;
+            this.customersList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.customersList.Size = new System.Drawing.Size(847, 176);
+            this.customersList.TabIndex = 26;
             // 
             // label6
             // 
@@ -409,11 +414,22 @@ namespace DevinMinaC868
             this.panel1.Size = new System.Drawing.Size(216, 84);
             this.panel1.TabIndex = 31;
             // 
+            // refreshCustomers
+            // 
+            this.refreshCustomers.Location = new System.Drawing.Point(572, 446);
+            this.refreshCustomers.Name = "refreshCustomers";
+            this.refreshCustomers.Size = new System.Drawing.Size(75, 31);
+            this.refreshCustomers.TabIndex = 32;
+            this.refreshCustomers.Text = "Refresh";
+            this.refreshCustomers.UseVisualStyleBackColor = true;
+            this.refreshCustomers.Click += new System.EventHandler(this.refreshCustomers_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(954, 721);
+            this.Controls.Add(this.refreshCustomers);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.deleteUser);
             this.Controls.Add(this.addCustomerButton);
@@ -423,7 +439,7 @@ namespace DevinMinaC868
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.dgv_customers);
+            this.Controls.Add(this.customersList);
             this.Controls.Add(this.searchBox);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.refreshButton);
@@ -440,7 +456,7 @@ namespace DevinMinaC868
             ((System.ComponentModel.ISupportInitialize)(this.appointmentCalendar)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_customers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customersList)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -472,7 +488,7 @@ namespace DevinMinaC868
         private System.Windows.Forms.Button deleteCustomerButton;
         private System.Windows.Forms.Button modifyCustomerButton;
         private System.Windows.Forms.TextBox searchBox;
-        private System.Windows.Forms.DataGridView dgv_customers;
+        private System.Windows.Forms.DataGridView customersList;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
@@ -480,5 +496,6 @@ namespace DevinMinaC868
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button refreshCustomers;
     }
 }
