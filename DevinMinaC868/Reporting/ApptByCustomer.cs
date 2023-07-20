@@ -45,7 +45,7 @@ namespace DevinMinaC868.Reporting
 
         private void CustComboBox_SelectedValueChanged(object sender, EventArgs e)
         {
-            if (customerComboBox.SelectedIndex != -1)
+            if (customerComboBox.SelectedIndex > -1)
             {
                 int id = Convert.ToInt32(customerComboBox.SelectedValue);
                 DataTable dataTableRecord = dbHelp.getApptListByCustomer(id.ToString());

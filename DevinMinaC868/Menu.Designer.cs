@@ -71,12 +71,13 @@ namespace DevinMinaC868
             // 
             this.appointmentsByConsultant.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.appointmentsByConsultant.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.appointmentsByConsultant.Location = new System.Drawing.Point(111, 39);
+            this.appointmentsByConsultant.Location = new System.Drawing.Point(505, 46);
             this.appointmentsByConsultant.Name = "appointmentsByConsultant";
             this.appointmentsByConsultant.Size = new System.Drawing.Size(98, 63);
             this.appointmentsByConsultant.TabIndex = 17;
             this.appointmentsByConsultant.Text = "Search Appointments by Consultant";
             this.appointmentsByConsultant.UseVisualStyleBackColor = false;
+            this.appointmentsByConsultant.Visible = false;
             this.appointmentsByConsultant.Click += new System.EventHandler(this.AppointmentsByConsultant_Click);
             // 
             // appointmentsByCustomer
@@ -107,12 +108,13 @@ namespace DevinMinaC868
             // modifyUser
             // 
             this.modifyUser.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.modifyUser.Location = new System.Drawing.Point(112, 28);
+            this.modifyUser.Location = new System.Drawing.Point(373, 62);
             this.modifyUser.Name = "modifyUser";
             this.modifyUser.Size = new System.Drawing.Size(95, 47);
             this.modifyUser.TabIndex = 23;
             this.modifyUser.Text = "Edit User";
             this.modifyUser.UseVisualStyleBackColor = false;
+            this.modifyUser.Visible = false;
             this.modifyUser.Click += new System.EventHandler(this.editUser_Click);
             // 
             // panel3
@@ -120,7 +122,6 @@ namespace DevinMinaC868
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.apptByMonthButton);
             this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.appointmentsByConsultant);
             this.panel3.Controls.Add(this.button1);
             this.panel3.Controls.Add(this.appointmentsByCustomer);
             this.panel3.Location = new System.Drawing.Point(726, 215);
@@ -154,7 +155,7 @@ namespace DevinMinaC868
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(6, 39);
+            this.button1.Location = new System.Drawing.Point(54, 39);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(99, 63);
             this.button1.TabIndex = 13;
@@ -384,7 +385,7 @@ namespace DevinMinaC868
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.Location = new System.Drawing.Point(7, 28);
+            this.button2.Location = new System.Drawing.Point(64, 32);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(99, 47);
             this.button2.TabIndex = 22;
@@ -407,7 +408,6 @@ namespace DevinMinaC868
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.modifyUser);
             this.panel1.Location = new System.Drawing.Point(726, 25);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(216, 84);
@@ -430,6 +430,8 @@ namespace DevinMinaC868
             this.ClientSize = new System.Drawing.Size(954, 721);
             this.Controls.Add(this.refreshCustomers);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.modifyUser);
+            this.Controls.Add(this.appointmentsByConsultant);
             this.Controls.Add(this.deleteUser);
             this.Controls.Add(this.addCustomerButton);
             this.Controls.Add(this.deleteCustomerButton);
