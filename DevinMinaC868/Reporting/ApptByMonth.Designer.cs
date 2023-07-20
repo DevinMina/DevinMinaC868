@@ -378,6 +378,7 @@ namespace DevinMinaC868.Reporting
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.typeComboBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "ApptByMonth";
             this.Text = "ApptByMonth";
             this.ResumeLayout(false);

@@ -33,7 +33,6 @@ namespace DevinMinaC868
             this.appointmentsByCustomer = new System.Windows.Forms.Button();
             this.deleteUser = new System.Windows.Forms.Button();
             this.modifyUser = new System.Windows.Forms.Button();
-            this.addUser = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.apptByMonthButton = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -57,8 +56,9 @@ namespace DevinMinaC868
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.appointmentCalendar)).BeginInit();
             this.panel2.SuspendLayout();
@@ -70,9 +70,9 @@ namespace DevinMinaC868
             // 
             this.appointmentsByConsultant.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.appointmentsByConsultant.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.appointmentsByConsultant.Location = new System.Drawing.Point(153, 46);
+            this.appointmentsByConsultant.Location = new System.Drawing.Point(111, 39);
             this.appointmentsByConsultant.Name = "appointmentsByConsultant";
-            this.appointmentsByConsultant.Size = new System.Drawing.Size(134, 113);
+            this.appointmentsByConsultant.Size = new System.Drawing.Size(98, 63);
             this.appointmentsByConsultant.TabIndex = 17;
             this.appointmentsByConsultant.Text = "Search Appointments by Consultant";
             this.appointmentsByConsultant.UseVisualStyleBackColor = false;
@@ -82,9 +82,9 @@ namespace DevinMinaC868
             // 
             this.appointmentsByCustomer.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.appointmentsByCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.appointmentsByCustomer.Location = new System.Drawing.Point(6, 184);
+            this.appointmentsByCustomer.Location = new System.Drawing.Point(7, 108);
             this.appointmentsByCustomer.Name = "appointmentsByCustomer";
-            this.appointmentsByCustomer.Size = new System.Drawing.Size(135, 113);
+            this.appointmentsByCustomer.Size = new System.Drawing.Size(99, 63);
             this.appointmentsByCustomer.TabIndex = 19;
             this.appointmentsByCustomer.Text = "Search Appointments By Customer";
             this.appointmentsByCustomer.UseVisualStyleBackColor = false;
@@ -94,9 +94,9 @@ namespace DevinMinaC868
             // 
             this.deleteUser.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.deleteUser.Cursor = System.Windows.Forms.Cursors.No;
-            this.deleteUser.Location = new System.Drawing.Point(25, 273);
+            this.deleteUser.Location = new System.Drawing.Point(601, 9);
             this.deleteUser.Name = "deleteUser";
-            this.deleteUser.Size = new System.Drawing.Size(247, 23);
+            this.deleteUser.Size = new System.Drawing.Size(65, 37);
             this.deleteUser.TabIndex = 24;
             this.deleteUser.Text = "Delete User";
             this.deleteUser.UseVisualStyleBackColor = false;
@@ -106,24 +106,13 @@ namespace DevinMinaC868
             // modifyUser
             // 
             this.modifyUser.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.modifyUser.Location = new System.Drawing.Point(25, 150);
+            this.modifyUser.Location = new System.Drawing.Point(112, 28);
             this.modifyUser.Name = "modifyUser";
-            this.modifyUser.Size = new System.Drawing.Size(247, 64);
+            this.modifyUser.Size = new System.Drawing.Size(95, 47);
             this.modifyUser.TabIndex = 23;
             this.modifyUser.Text = "Edit User";
             this.modifyUser.UseVisualStyleBackColor = false;
             this.modifyUser.Click += new System.EventHandler(this.editUser_Click);
-            // 
-            // addUser
-            // 
-            this.addUser.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.addUser.Location = new System.Drawing.Point(25, 75);
-            this.addUser.Name = "addUser";
-            this.addUser.Size = new System.Drawing.Size(247, 64);
-            this.addUser.TabIndex = 22;
-            this.addUser.Text = "Add User";
-            this.addUser.UseVisualStyleBackColor = false;
-            this.addUser.Click += new System.EventHandler(this.addUser_Click);
             // 
             // panel3
             // 
@@ -131,20 +120,20 @@ namespace DevinMinaC868
             this.panel3.Controls.Add(this.apptByMonthButton);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.appointmentsByConsultant);
-            this.panel3.Controls.Add(this.appointmentsByCustomer);
             this.panel3.Controls.Add(this.button1);
-            this.panel3.Location = new System.Drawing.Point(813, 154);
+            this.panel3.Controls.Add(this.appointmentsByCustomer);
+            this.panel3.Location = new System.Drawing.Point(726, 215);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(298, 320);
+            this.panel3.Size = new System.Drawing.Size(216, 178);
             this.panel3.TabIndex = 21;
             // 
             // apptByMonthButton
             // 
             this.apptByMonthButton.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.apptByMonthButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.apptByMonthButton.Location = new System.Drawing.Point(152, 184);
+            this.apptByMonthButton.Location = new System.Drawing.Point(111, 108);
             this.apptByMonthButton.Name = "apptByMonthButton";
-            this.apptByMonthButton.Size = new System.Drawing.Size(135, 113);
+            this.apptByMonthButton.Size = new System.Drawing.Size(99, 63);
             this.apptByMonthButton.TabIndex = 6;
             this.apptByMonthButton.Text = "Appointments by Month";
             this.apptByMonthButton.UseVisualStyleBackColor = false;
@@ -154,7 +143,7 @@ namespace DevinMinaC868
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(106, 10);
+            this.label5.Location = new System.Drawing.Point(59, 6);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(94, 25);
             this.label5.TabIndex = 5;
@@ -164,9 +153,9 @@ namespace DevinMinaC868
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(6, 46);
+            this.button1.Location = new System.Drawing.Point(6, 39);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(135, 113);
+            this.button1.Size = new System.Drawing.Size(99, 63);
             this.button1.TabIndex = 13;
             this.button1.Text = "Appointment Count by Type";
             this.button1.UseVisualStyleBackColor = false;
@@ -176,7 +165,7 @@ namespace DevinMinaC868
             // 
             this.refreshButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.refreshButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.refreshButton.Location = new System.Drawing.Point(716, 180);
+            this.refreshButton.Location = new System.Drawing.Point(648, 181);
             this.refreshButton.Name = "refreshButton";
             this.refreshButton.Size = new System.Drawing.Size(75, 32);
             this.refreshButton.TabIndex = 20;
@@ -188,9 +177,9 @@ namespace DevinMinaC868
             // 
             this.monthRadio.AutoSize = true;
             this.monthRadio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.monthRadio.Location = new System.Drawing.Point(616, 186);
+            this.monthRadio.Location = new System.Drawing.Point(545, 187);
             this.monthRadio.Name = "monthRadio";
-            this.monthRadio.Size = new System.Drawing.Size(94, 20);
+            this.monthRadio.Size = new System.Drawing.Size(93, 20);
             this.monthRadio.TabIndex = 18;
             this.monthRadio.TabStop = true;
             this.monthRadio.Text = "Month View";
@@ -201,9 +190,9 @@ namespace DevinMinaC868
             this.weekRadio.AutoSize = true;
             this.weekRadio.Checked = true;
             this.weekRadio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.weekRadio.Location = new System.Drawing.Point(516, 185);
+            this.weekRadio.Location = new System.Drawing.Point(446, 187);
             this.weekRadio.Name = "weekRadio";
-            this.weekRadio.Size = new System.Drawing.Size(94, 20);
+            this.weekRadio.Size = new System.Drawing.Size(93, 20);
             this.weekRadio.TabIndex = 16;
             this.weekRadio.TabStop = true;
             this.weekRadio.Text = "Week View";
@@ -216,12 +205,12 @@ namespace DevinMinaC868
             this.appointmentCalendar.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.appointmentCalendar.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.appointmentCalendar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.appointmentCalendar.Location = new System.Drawing.Point(256, 221);
+            this.appointmentCalendar.Location = new System.Drawing.Point(188, 215);
             this.appointmentCalendar.Name = "appointmentCalendar";
             this.appointmentCalendar.ReadOnly = true;
             this.appointmentCalendar.RowHeadersWidth = 45;
             this.appointmentCalendar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.appointmentCalendar.Size = new System.Drawing.Size(535, 251);
+            this.appointmentCalendar.Size = new System.Drawing.Size(535, 178);
             this.appointmentCalendar.TabIndex = 15;
             // 
             // panel2
@@ -233,16 +222,16 @@ namespace DevinMinaC868
             this.panel2.Controls.Add(this.deleteAppointmentButton);
             this.panel2.Controls.Add(this.modifyAppointmentButton);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(22, 154);
+            this.panel2.Location = new System.Drawing.Point(12, 181);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(216, 318);
+            this.panel2.Size = new System.Drawing.Size(165, 212);
             this.panel2.TabIndex = 14;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(31, 35);
+            this.label4.Location = new System.Drawing.Point(4, 27);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(147, 25);
             this.label4.TabIndex = 7;
@@ -252,9 +241,9 @@ namespace DevinMinaC868
             // 
             this.addAppointmentButton.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.addAppointmentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addAppointmentButton.Location = new System.Drawing.Point(39, 62);
+            this.addAppointmentButton.Location = new System.Drawing.Point(13, 100);
             this.addAppointmentButton.Name = "addAppointmentButton";
-            this.addAppointmentButton.Size = new System.Drawing.Size(137, 90);
+            this.addAppointmentButton.Size = new System.Drawing.Size(137, 32);
             this.addAppointmentButton.TabIndex = 4;
             this.addAppointmentButton.Text = "Add Appointment";
             this.addAppointmentButton.UseVisualStyleBackColor = false;
@@ -264,9 +253,9 @@ namespace DevinMinaC868
             // 
             this.deleteAppointmentButton.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.deleteAppointmentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deleteAppointmentButton.Location = new System.Drawing.Point(39, 273);
+            this.deleteAppointmentButton.Location = new System.Drawing.Point(12, 171);
             this.deleteAppointmentButton.Name = "deleteAppointmentButton";
-            this.deleteAppointmentButton.Size = new System.Drawing.Size(137, 35);
+            this.deleteAppointmentButton.Size = new System.Drawing.Size(142, 25);
             this.deleteAppointmentButton.TabIndex = 6;
             this.deleteAppointmentButton.Text = "Delete Appointment";
             this.deleteAppointmentButton.UseVisualStyleBackColor = false;
@@ -276,9 +265,9 @@ namespace DevinMinaC868
             // 
             this.modifyAppointmentButton.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.modifyAppointmentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.modifyAppointmentButton.Location = new System.Drawing.Point(39, 158);
+            this.modifyAppointmentButton.Location = new System.Drawing.Point(12, 57);
             this.modifyAppointmentButton.Name = "modifyAppointmentButton";
-            this.modifyAppointmentButton.Size = new System.Drawing.Size(137, 90);
+            this.modifyAppointmentButton.Size = new System.Drawing.Size(137, 32);
             this.modifyAppointmentButton.TabIndex = 5;
             this.modifyAppointmentButton.Text = "Edit Appointment";
             this.modifyAppointmentButton.UseVisualStyleBackColor = false;
@@ -288,7 +277,7 @@ namespace DevinMinaC868
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(34, 10);
+            this.label2.Location = new System.Drawing.Point(7, 2);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(143, 25);
             this.label2.TabIndex = 3;
@@ -298,7 +287,7 @@ namespace DevinMinaC868
             // 
             this.addCustomerButton.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.addCustomerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addCustomerButton.Location = new System.Drawing.Point(22, 759);
+            this.addCustomerButton.Location = new System.Drawing.Point(10, 665);
             this.addCustomerButton.Name = "addCustomerButton";
             this.addCustomerButton.Size = new System.Drawing.Size(137, 33);
             this.addCustomerButton.TabIndex = 0;
@@ -310,7 +299,7 @@ namespace DevinMinaC868
             // 
             this.deleteCustomerButton.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.deleteCustomerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deleteCustomerButton.Location = new System.Drawing.Point(976, 759);
+            this.deleteCustomerButton.Location = new System.Drawing.Point(720, 665);
             this.deleteCustomerButton.Name = "deleteCustomerButton";
             this.deleteCustomerButton.Size = new System.Drawing.Size(137, 33);
             this.deleteCustomerButton.TabIndex = 2;
@@ -322,7 +311,7 @@ namespace DevinMinaC868
             // 
             this.modifyCustomerButton.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.modifyCustomerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.modifyCustomerButton.Location = new System.Drawing.Point(188, 759);
+            this.modifyCustomerButton.Location = new System.Drawing.Point(160, 665);
             this.modifyCustomerButton.Name = "modifyCustomerButton";
             this.modifyCustomerButton.Size = new System.Drawing.Size(137, 33);
             this.modifyCustomerButton.TabIndex = 1;
@@ -333,7 +322,7 @@ namespace DevinMinaC868
             // searchBox
             // 
             this.searchBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchBox.Location = new System.Drawing.Point(217, 530);
+            this.searchBox.Location = new System.Drawing.Point(207, 451);
             this.searchBox.Name = "searchBox";
             this.searchBox.Size = new System.Drawing.Size(332, 26);
             this.searchBox.TabIndex = 25;
@@ -345,16 +334,16 @@ namespace DevinMinaC868
             // dgv_customers
             // 
             this.dgv_customers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_customers.Location = new System.Drawing.Point(22, 567);
+            this.dgv_customers.Location = new System.Drawing.Point(10, 483);
             this.dgv_customers.Name = "dgv_customers";
-            this.dgv_customers.Size = new System.Drawing.Size(1089, 176);
+            this.dgv_customers.Size = new System.Drawing.Size(847, 176);
             this.dgv_customers.TabIndex = 26;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(16, 523);
+            this.label6.Location = new System.Drawing.Point(6, 444);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(195, 31);
             this.label6.TabIndex = 27;
@@ -363,10 +352,10 @@ namespace DevinMinaC868
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(221, 9);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(3, 9);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(702, 55);
+            this.label7.Size = new System.Drawing.Size(474, 37);
             this.label7.TabIndex = 28;
             this.label7.Text = "APPOINTMENT SCHEDULER";
             // 
@@ -374,7 +363,7 @@ namespace DevinMinaC868
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(434, 78);
+            this.label8.Location = new System.Drawing.Point(5, 51);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(239, 42);
             this.label8.TabIndex = 29;
@@ -384,40 +373,51 @@ namespace DevinMinaC868
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(262, 175);
+            this.label9.Location = new System.Drawing.Point(192, 176);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(248, 31);
             this.label9.TabIndex = 30;
             this.label9.Text = "Appointment View";
             // 
-            // panel1
+            // button2
             // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.addUser);
-            this.panel1.Controls.Add(this.deleteUser);
-            this.panel1.Controls.Add(this.modifyUser);
-            this.panel1.Location = new System.Drawing.Point(1156, 154);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(298, 320);
-            this.panel1.TabIndex = 31;
+            this.button2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button2.Location = new System.Drawing.Point(7, 28);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(99, 47);
+            this.button2.TabIndex = 22;
+            this.button2.Text = "Add User";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.addUser_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(55, 20);
+            this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(204, 25);
             this.label1.TabIndex = 5;
             this.label1.Text = "Advanced Options";
             // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.modifyUser);
+            this.panel1.Location = new System.Drawing.Point(726, 25);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(216, 84);
+            this.panel1.TabIndex = 31;
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1547, 872);
+            this.ClientSize = new System.Drawing.Size(954, 721);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.deleteUser);
             this.Controls.Add(this.addCustomerButton);
             this.Controls.Add(this.deleteCustomerButton);
             this.Controls.Add(this.label9);
@@ -433,6 +433,7 @@ namespace DevinMinaC868
             this.Controls.Add(this.weekRadio);
             this.Controls.Add(this.appointmentCalendar);
             this.Controls.Add(this.panel2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Menu";
             this.Text = "Menu";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Menu_FormClosing);
@@ -455,7 +456,6 @@ namespace DevinMinaC868
         private System.Windows.Forms.Button appointmentsByCustomer;
         private System.Windows.Forms.Button deleteUser;
         private System.Windows.Forms.Button modifyUser;
-        private System.Windows.Forms.Button addUser;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button apptByMonthButton;
         private System.Windows.Forms.Label label5;
@@ -479,7 +479,8 @@ namespace DevinMinaC868
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel1;
     }
 }

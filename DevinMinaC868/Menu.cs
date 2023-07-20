@@ -20,7 +20,6 @@ namespace DevinMinaC868
             InitializeComponent();
             appointmentCalendar.DataSource = displayCalendar(weekRadio.Checked);
             update_customers();
-            //updates customers dgv
 
         }
 
@@ -273,26 +272,23 @@ namespace DevinMinaC868
         }
 
 
-        //SearchBox Enter/Leave 
-        private void searchBox_Enter(object sender, EventArgs e)
-        {
-            if (searchBox.Text.Contains("Search Customer Name"))
-            {
-                searchBox.Text = "";
-                searchBox.ForeColor = Color.Black;
-            }
-        }
+        ////SearchBox Enter/Leave 
+        //private void searchBox_Enter(object sender, EventArgs e)
+        //{
+        //    if (searchBox.Text.Contains("Search Customer Name"))
+        //    {
+        //        searchBox.Text = "";
+        //        searchBox.ForeColor = Color.Black;
+        //    }
+        //}
 
-        private void searchBox_Leave(object sender, EventArgs e)
-        {
-            if (searchBox.Text == "")
-            {
-                searchBox.Text = "Search Customer Name";
-                searchBox.ForeColor = Color.DimGray;
-            }
-        }
-
-
-
+        //private void searchBox_Leave(object sender, EventArgs e)
+        //{
+        //    if (searchBox.Text == "")
+        //    {
+        //        searchBox.Text = "Search Customer Name";
+        //        searchBox.ForeColor = Color.DimGray;
+        //    }
+        //}
     }
 }

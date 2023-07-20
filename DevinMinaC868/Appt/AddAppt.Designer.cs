@@ -251,6 +251,7 @@ namespace DevinMinaC868
             this.Controls.Add(this.appointmentText);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.addApptComboBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "AddAppt";
             this.Text = "AddAppt";
             this.ResumeLayout(false);

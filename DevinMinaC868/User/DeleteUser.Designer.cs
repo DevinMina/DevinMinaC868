@@ -43,10 +43,9 @@ namespace DevinMinaC868.User
             this.warningLabel.AutoSize = true;
             this.warningLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.warningLabel.ForeColor = System.Drawing.Color.Red;
-            this.warningLabel.Location = new System.Drawing.Point(35, 191);
-            this.warningLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.warningLabel.Location = new System.Drawing.Point(26, 155);
             this.warningLabel.Name = "warningLabel";
-            this.warningLabel.Size = new System.Drawing.Size(376, 20);
+            this.warningLabel.Size = new System.Drawing.Size(328, 17);
             this.warningLabel.TabIndex = 66;
             this.warningLabel.Text = "Warning: You cannot delete the active user.";
             // 
@@ -54,20 +53,18 @@ namespace DevinMinaC868.User
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(59, 72);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(44, 58);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(314, 18);
+            this.label9.Size = new System.Drawing.Size(260, 15);
             this.label9.TabIndex = 65;
             this.label9.Text = "Please select the user you would like to delete.";
             // 
             // cancelButton
             // 
             this.cancelButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cancelButton.Location = new System.Drawing.Point(322, 284);
-            this.cancelButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cancelButton.Location = new System.Drawing.Point(242, 231);
             this.cancelButton.Name = "cancelButton";
-            this.cancelButton.Size = new System.Drawing.Size(100, 28);
+            this.cancelButton.Size = new System.Drawing.Size(75, 23);
             this.cancelButton.TabIndex = 64;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = false;
@@ -76,10 +73,9 @@ namespace DevinMinaC868.User
             // deleteButton
             // 
             this.deleteButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.deleteButton.Location = new System.Drawing.Point(10, 284);
-            this.deleteButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.deleteButton.Location = new System.Drawing.Point(8, 231);
             this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(100, 28);
+            this.deleteButton.Size = new System.Drawing.Size(75, 23);
             this.deleteButton.TabIndex = 63;
             this.deleteButton.Text = "Delete";
             this.deleteButton.UseVisualStyleBackColor = false;
@@ -89,20 +85,18 @@ namespace DevinMinaC868.User
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(49, 136);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(37, 110);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 20);
+            this.label1.Size = new System.Drawing.Size(73, 13);
             this.label1.TabIndex = 62;
             this.label1.Text = "Select User";
             // 
             // deleteComboBox
             // 
             this.deleteComboBox.FormattingEnabled = true;
-            this.deleteComboBox.Location = new System.Drawing.Point(169, 132);
-            this.deleteComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.deleteComboBox.Location = new System.Drawing.Point(127, 107);
             this.deleteComboBox.Name = "deleteComboBox";
-            this.deleteComboBox.Size = new System.Drawing.Size(204, 24);
+            this.deleteComboBox.Size = new System.Drawing.Size(154, 21);
             this.deleteComboBox.TabIndex = 61;
             this.deleteComboBox.Text = "--Select--";
             this.deleteComboBox.SelectedValueChanged += new System.EventHandler(this.deleteComboBox_SelectedValueChanged);
@@ -111,17 +105,18 @@ namespace DevinMinaC868.User
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(115, 21);
+            this.label3.Location = new System.Drawing.Point(86, 17);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(199, 36);
+            this.label3.Size = new System.Drawing.Size(165, 29);
             this.label3.TabIndex = 67;
             this.label3.Text = "Delete User?";
             // 
             // DeleteUser
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(448, 325);
+            this.ClientSize = new System.Drawing.Size(336, 264);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.warningLabel);
             this.Controls.Add(this.label9);
@@ -129,7 +124,7 @@ namespace DevinMinaC868.User
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.deleteComboBox);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "DeleteUser";
             this.Text = "DeleteUser";
             this.ResumeLayout(false);

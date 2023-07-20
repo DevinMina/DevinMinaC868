@@ -267,6 +267,7 @@ namespace DevinMinaC868
             this.Controls.Add(this.nameText);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.modifyComboBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "EditCustomer";
             this.Text = "EditCustomer";
             this.ResumeLayout(false);

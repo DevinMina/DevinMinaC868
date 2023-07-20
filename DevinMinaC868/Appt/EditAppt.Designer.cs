@@ -252,7 +252,7 @@ namespace DevinMinaC868.Appt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(818, 339);
+            this.ClientSize = new System.Drawing.Size(807, 339);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.appointmentComboBox);
             this.Controls.Add(this.typeComboBox);
@@ -274,6 +274,7 @@ namespace DevinMinaC868.Appt
             this.Controls.Add(this.appointmentText);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.customerComboBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "EditAppt";
             this.Text = "EditAppt";
             this.ResumeLayout(false);

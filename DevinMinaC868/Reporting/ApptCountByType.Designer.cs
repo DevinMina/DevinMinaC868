@@ -210,6 +210,7 @@ namespace DevinMinaC868.Reporting
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "ApptCountByType";
             this.Text = "ReportCountByType";
             this.ResumeLayout(false);

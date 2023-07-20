@@ -266,6 +266,7 @@ namespace DevinMinaC868
             this.Controls.Add(this.nameText);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.deleteComboBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "DeleteCustomer";
             this.Text = "DeleteCustomer";
             this.ResumeLayout(false);

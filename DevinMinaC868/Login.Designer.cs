@@ -103,6 +103,7 @@ namespace DevinMinaC868
             this.Controls.Add(this.usernameText);
             this.Controls.Add(this.passwordLabel);
             this.Controls.Add(this.usernameLabel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Login";
             this.Text = "Login";
             this.ResumeLayout(false);

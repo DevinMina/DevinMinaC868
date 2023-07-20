@@ -95,6 +95,7 @@ namespace DevinMinaC868.Reporting
             this.Controls.Add(this.label1);
             this.Controls.Add(this.userComboBox);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "ApptByConsult";
             this.Text = "ApptByConsult";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
