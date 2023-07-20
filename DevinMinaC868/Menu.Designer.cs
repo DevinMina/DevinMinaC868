@@ -328,8 +328,6 @@ namespace DevinMinaC868
             this.searchBox.TabIndex = 25;
             this.searchBox.Text = "Search Customer Name";
             this.searchBox.TextChanged += new System.EventHandler(this.txtBox_search_TextChanged);
-            this.searchBox.Enter += new System.EventHandler(this.searchBox_Enter);
-            this.searchBox.Leave += new System.EventHandler(this.searchBox_Leave);
             // 
             // dgv_customers
             // 
